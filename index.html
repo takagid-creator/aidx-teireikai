@@ -1,0 +1,2059 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI・DX定例会</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#1d4f91">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AI・DX定例会">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f5f8;--surface:#fff;--ink:#18212d;--muted:#687385;--line:#e2e6ed;--soft:#f7f9fb;
+  --primary:#1d4f91;--primary-2:#2d6bc0;--primary-soft:#e8f0fb;--accent:#14a39a;--accent-soft:#e3f6f4;
+  --warn:#e38b2c;--warn-soft:#fdf1e3;--danger:#d44a4a;--danger-soft:#fbe9e9;--ok:#2f9e5a;--ok-soft:#e5f5eb;
+  --radius:12px;--shadow:0 1px 2px rgba(16,24,40,.05),0 6px 18px rgba(16,24,40,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-size:14px;line-height:1.6}
+a{color:var(--primary-2)}
+button{font:inherit}
+input,select,textarea{font:inherit;color:var(--ink)}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;height:58px;padding:0 20px;background:linear-gradient(90deg,#0f2f5c,#1d4f91 60%,#14797a);color:#fff}
+.brand{display:flex;gap:11px;align-items:center;min-width:0}
+.logo{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-weight:700;letter-spacing:.5px;border:1px solid rgba(255,255,255,.35);flex-shrink:0}
+.t1{font-weight:700;font-size:16px;white-space:nowrap}.t2{font-size:11px;opacity:.75;white-space:nowrap}
+.top-right{display:flex;align-items:center;gap:10px}
+.mode{font-size:11px;padding:3px 10px;border-radius:20px;white-space:nowrap;border:1px solid rgba(255,255,255,.4)}
+.mode.remote{background:rgba(47,158,90,.35)}.mode.local{background:rgba(227,139,44,.4)}.mode.err{background:rgba(212,74,74,.55)}
+.icon-btn{border:0;background:transparent;color:inherit;width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:18px;display:grid;place-items:center}
+.topbar .icon-btn:hover{background:rgba(255,255,255,.15)}
+.icon-btn.spin svg{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mebox{display:flex;align-items:center;gap:8px;cursor:pointer;padding:4px 10px 4px 4px;border-radius:20px;background:rgba(255,255,255,.12);border:0;color:#fff}
+.mebox:hover{background:rgba(255,255,255,.22)}
+.layout{display:flex;min-height:calc(100vh - 58px)}
+.sidenav{width:212px;flex-shrink:0;padding:16px 10px;background:var(--surface);border-right:1px solid var(--line);position:sticky;top:58px;height:calc(100vh - 58px);display:flex;flex-direction:column;gap:2px}
+.nav-item{display:flex;align-items:center;gap:11px;width:100%;padding:10px 12px;border:0;background:none;border-radius:9px;color:var(--muted);cursor:pointer;text-align:left;position:relative}
+.nav-item:hover{background:var(--soft);color:var(--ink)}
+.nav-item.on{background:var(--primary-soft);color:var(--primary);font-weight:700}
+.nbadge{margin-left:auto;background:var(--danger);color:#fff;border-radius:10px;font-size:11px;padding:0 7px;line-height:18px;font-weight:700}
+main{flex:1;min-width:0;padding:22px 26px 48px;max-width:1260px}
+.page-h{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.page-h h2{margin:0;font-size:20px}
+.page-h .sub{color:var(--muted);font-size:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;min-width:0}
+.card>h3{margin:0 0 12px;font-size:15px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.dash{grid-template-columns:minmax(0,1.45fr) minmax(0,1fr)}
+.stack{display:flex;flex-direction:column;gap:16px;min-width:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;white-space:nowrap;font-weight:500}
+.btn:hover{background:var(--soft)}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:#fff}.btn.primary:hover{background:var(--primary-2)}
+.btn.accent{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.danger{color:var(--danger);border-color:#f0c9c9}.btn.danger:hover{background:var(--danger-soft)}
+.btn.ghost{border-color:transparent;background:transparent;color:var(--muted)}.btn.ghost:hover{background:var(--soft);color:var(--ink)}
+.btn.sm{padding:4px 10px;font-size:12px;border-radius:7px}
+.btn:disabled{opacity:.5;cursor:default}
+.link{background:none;border:0;color:var(--primary-2);cursor:pointer;padding:0;font-size:12px}
+.link:hover{text-decoration:underline}
+.av{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;color:#fff;font-weight:700;font-size:12px;flex-shrink:0;box-shadow:0 0 0 2px #fff}
+.muted{color:var(--muted)}.small{font-size:12px}
+.empty{padding:22px;text-align:center;color:var(--muted);font-size:13px;background:var(--soft);border-radius:10px;border:1px dashed var(--line)}
+.tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:10px;background:var(--soft);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.tag.blue{background:var(--primary-soft);border-color:#cddcf2;color:var(--primary)}
+.tag.green{background:var(--ok-soft);border-color:#c6e7d2;color:var(--ok)}
+.tag.orange{background:var(--warn-soft);border-color:#f3d6b4;color:#b5661a}
+.tag.red{background:var(--danger-soft);border-color:#f0c9c9;color:var(--danger)}
+.tag.gray{color:#8a93a1}
+.pre{white-space:pre-wrap;word-break:break-word}
+/* hero */
+.hero{background:linear-gradient(135deg,#123a6e,#1d4f91 55%,#168a86);color:#fff;border:0}
+.hero .lbl{font-size:12px;opacity:.8;letter-spacing:.05em}
+.hero .big{font-size:26px;font-weight:700;line-height:1.3;margin:4px 0}
+.hero .meta{opacity:.9;font-size:13px}
+.hero .meta a{color:#cfe6ff}
+.count{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:2px 12px;border-radius:20px;font-weight:700;font-size:13px}
+.count.today{background:#ffb648;color:#3b2500;border-color:#ffb648}
+.hero-row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.hero .agenda{margin-top:12px;background:rgba(255,255,255,.1);border-radius:9px;padding:10px 12px;font-size:13px;max-height:140px;overflow:auto}
+.hero .att-line{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}
+.hero .btn{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);color:#fff}
+.hero .btn:hover{background:rgba(255,255,255,.22)}
+.hero .seg button.on{background:#fff;color:var(--primary)}
+/* attendance */
+.avs{display:flex;align-items:center}
+.avs .avw{position:relative;margin-right:-4px}
+.avw .st{position:absolute;right:-3px;bottom:-3px;width:13px;height:13px;border-radius:50%;border:2px solid #fff;font-size:8px;display:grid;place-items:center;color:#fff;font-weight:700}
+.st.yes{background:var(--ok)}.st.no{background:var(--danger)}.st.maybe{background:var(--warn)}.st.none{background:#b9c0cb}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:4px 11px;cursor:pointer;font-size:12px;color:var(--muted)}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button.on.yes{background:var(--ok);color:#fff}.seg button.on.no{background:var(--danger);color:#fff}.seg button.on.maybe{background:var(--warn);color:#fff}
+.hero .seg{border-color:rgba(255,255,255,.35)}
+.hero .seg button{color:#fff}
+.hero .seg button+button{border-left-color:rgba(255,255,255,.35)}
+.att-table{width:100%;border-collapse:collapse}
+.att-table td{padding:7px 4px;border-bottom:1px solid var(--line)}
+.att-sum{display:flex;gap:6px;flex-wrap:wrap}
+/* lists */
+.list{display:flex;flex-direction:column}
+.li{display:flex;gap:10px;align-items:center;padding:10px 4px;border-bottom:1px solid var(--line);min-width:0}
+.li:last-child{border-bottom:0}
+.li .grow{flex:1;min-width:0}
+.li .ttl{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.clickable{cursor:pointer;border-radius:8px}
+.clickable:hover{background:var(--soft)}
+.todo{display:flex;gap:10px;align-items:flex-start;padding:8px 4px;border-bottom:1px solid var(--line)}
+.todo:last-child{border-bottom:0}
+.todo input{margin-top:4px;width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
+.todo.done .tx{text-decoration:line-through;color:var(--muted)}
+.due{font-size:11px}.due.over{color:var(--danger);font-weight:700}
+/* calendar */
+.cal-h{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.cal-h .ym{font-size:17px;font-weight:700;min-width:120px;text-align:center}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);border-radius:8px;overflow:hidden}
+.cal .dow{background:var(--soft);text-align:center;font-size:12px;padding:5px 0;color:var(--muted);border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:700}
+.cal .dow.sun{color:var(--danger)}.cal .dow.sat{color:var(--primary-2)}
+.cell{min-height:86px;padding:4px 5px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);cursor:pointer;background:#fff;min-width:0}
+.cell:hover{background:#fafcff}
+.cell.out{background:#fafbfc;color:#b4bbc6}
+.cell .dn{font-size:12px;font-weight:500}
+.cell.today .dn{background:var(--primary);color:#fff;border-radius:50%;width:22px;height:22px;display:grid;place-items:center}
+.cell.sun .dn{color:var(--danger)}.cell.sat .dn{color:var(--primary-2)}
+.cell.today.sun .dn,.cell.today.sat .dn{color:#fff}
+.cell.hol{background:#fdeefb}.cell.hol.out{background:#faf3f9}
+.cobadge{display:block;margin-top:2px;font-size:10px;line-height:1.35;padding:0 5px;border-radius:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cobadge.kou{border:1px solid #2d6bc0;color:#1d4f91;background:#fff}
+.cobadge.uri{border:1px solid #d44a4a;color:#c03a3a;background:#fff}
+.cobadge.hl{color:#b0309e}.cobadge.wk{color:#7a8493}
+.pm{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;font-weight:700;font-size:13px}
+.pm.o{color:var(--ok);background:var(--ok-soft)}.pm.t{color:#b5661a;background:var(--warn-soft)}.pm.x{color:var(--danger);background:var(--danger-soft)}.pm.n{color:#aab2bf;background:var(--soft)}
+tr.best td{background:var(--accent-soft)}tr.conf td{background:var(--primary-soft)}
+.ptable th{padding:6px 4px;font-size:12px;border-bottom:2px solid var(--line);text-align:center}
+.ptable td{padding:7px 4px;border-bottom:1px solid var(--line);text-align:center}
+.ptable td:first-child,.ptable th:first-child{text-align:left;min-width:150px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:10px;align-items:center}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:3px}
+.hint{font-size:12px;color:#b5661a;margin-top:4px;min-height:0}
+.chip{display:block;margin-top:3px;font-size:11px;padding:2px 6px;border-radius:5px;background:var(--primary);color:#fff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;border:0;width:100%;text-align:left;cursor:pointer}
+.chip.cand{background:#fff;color:#b5661a;border:1px dashed #e38b2c;padding:2px;font-size:10px;line-height:1.3;text-align:center}
+.chip.past{background:#93a3ba}.chip.cancel{background:#c7ccd4;text-decoration:line-through}
+.mrow{display:flex;gap:14px;align-items:center;padding:12px 6px;border-bottom:1px solid var(--line);cursor:pointer;border-radius:8px}
+.mrow:hover{background:var(--soft)}
+.mrow:last-child{border-bottom:0}
+.dbox{width:54px;text-align:center;border-radius:9px;background:var(--primary-soft);color:var(--primary);padding:4px 0;flex-shrink:0}
+.dbox .m{font-size:11px}.dbox .d{font-size:20px;font-weight:700;line-height:1.1}.dbox .w{font-size:11px}
+.dbox.past{background:var(--soft);color:var(--muted)}
+/* minutes */
+.split{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px;align-items:start}
+.mlist{max-height:calc(100vh - 220px);overflow:auto;padding:8px}
+.mitem{padding:10px;border-radius:9px;cursor:pointer;border:1px solid transparent}
+.mitem:hover{background:var(--soft)}
+.mitem.on{background:var(--primary-soft);border-color:#cddcf2}
+.mitem .ttl{font-weight:500}
+.sec{margin-top:18px}
+.sec h4{margin:0 0 6px;font-size:13px;color:var(--primary);display:flex;align-items:center;gap:6px}
+.sec h4::before{content:"";width:4px;height:14px;border-radius:2px;background:var(--accent)}
+.box{background:var(--soft);border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.pchip{display:inline-flex;align-items:center;gap:6px;padding:2px 10px 2px 2px;border-radius:20px;background:var(--soft);border:1px solid var(--line);font-size:12px}
+.pchip .av{width:22px;height:22px;font-size:10px;box-shadow:none}
+/* files */
+.zones{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;margin-bottom:16px}
+.zones>.card{margin-bottom:0!important}
+.zones .frow2{grid-template-columns:1fr}
+@media(max-width:820px){.zones{grid-template-columns:1fr}}
+.zone{border-top:4px solid var(--primary-2)}
+.zone.up{background:#f3f8ff;border-top-color:var(--primary-2)}
+.zone.view{border-top-color:#16a085}
+.zone.priv{border-top-color:#8e5bd0}.zone.priv.up{background:#faf6ff}
+.zone.priv.up .zone-h{color:#6f3fb3}.zone.priv.up .zi{background:#8e5bd0}
+.zone.priv.view .zone-h{color:#6f3fb3}.zone.priv.view .zi{background:#8e5bd0}
+.list .li~.empty{display:none}
+.zone-title{margin:26px 0 10px;font-size:16px;font-weight:700;color:#6f3fb3}
+.zone-title small{font-weight:400;color:var(--muted);font-size:12px;margin-left:6px}
+.zone-h{display:flex;align-items:center;gap:8px;margin:0 0 12px;font-size:15px;font-weight:700}
+.zone-h .zi{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;color:#fff;font-size:14px}
+.zone.up .zone-h{color:var(--primary)}.zone.up .zi{background:var(--primary-2)}
+.zone.view .zone-h{color:#0e7a66}.zone.view .zi{background:#16a085}
+.zone-h .zs{font-size:12px;font-weight:400;color:var(--muted)}
+.drop{border:2px dashed #c4cfdf;border-radius:12px;padding:22px;text-align:center;background:#fafcff;cursor:pointer;transition:.15s}
+.drop:hover,.drop.over{border-color:var(--primary-2);background:var(--primary-soft)}
+.drop .big{font-size:15px;font-weight:700;color:var(--primary)}
+.fbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.ficon{width:38px;height:38px;border-radius:8px;display:grid;place-items:center;color:#fff;font-size:10px;font-weight:700;flex-shrink:0;letter-spacing:.02em}
+/* messages */
+.chat{display:flex;flex-direction:column;height:calc(100vh - 170px);min-height:420px;padding:0;overflow:hidden}
+.feed{flex:1;overflow:auto;padding:16px 18px}
+.msg{display:flex;gap:10px;margin-bottom:14px}
+.msg .bub{background:var(--soft);border:1px solid var(--line);border-radius:4px 12px 12px 12px;padding:8px 12px;max-width:100%;min-width:0}
+.msg.mine{flex-direction:row-reverse}
+.msg.mine .bub{background:var(--primary-soft);border-color:#cddcf2;border-radius:12px 4px 12px 12px}
+.msg.mine .mh{justify-content:flex-end}
+.msg .mh{display:flex;gap:8px;align-items:baseline;font-size:12px;margin-bottom:2px}
+.msg .body{white-space:pre-wrap;word-break:break-word}
+.msg .ops{display:flex;gap:10px;margin-top:3px;opacity:0;transition:.15s}
+.msg:hover .ops{opacity:1}
+.msg.mine .ops{justify-content:flex-end}
+.msg.tome .bub{box-shadow:inset 3px 0 0 var(--warn)}
+.mention{background:#fff1d6;color:#9a5a12;border-radius:4px;padding:0 3px;font-weight:500}
+.dsep{text-align:center;margin:10px 0 14px;font-size:11px;color:var(--muted)}
+.dsep span{background:var(--surface);padding:2px 12px;border-radius:12px;border:1px solid var(--line)}
+.pins{border-bottom:1px solid var(--line);background:#fffaf0;padding:8px 18px;max-height:120px;overflow:auto;font-size:12px}
+.pins .pin{padding:3px 0;cursor:default}
+.composer{border-top:1px solid var(--line);padding:10px 12px;display:flex;gap:8px;align-items:flex-end;background:var(--surface)}
+.composer textarea{flex:1;resize:none;min-height:42px;max-height:160px}
+/* forms */
+.f{display:flex;flex-direction:column;gap:4px;margin-bottom:12px}
+.f label{font-size:12px;color:var(--muted);font-weight:500}
+.inp,select.inp,textarea.inp{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;outline:none}
+.inp:focus{border-color:var(--primary-2);box-shadow:0 0 0 3px rgba(45,107,192,.15)}
+textarea.inp{resize:vertical;min-height:80px}
+.frow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.frow2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.checks{display:flex;flex-wrap:wrap;gap:6px}
+.checks label{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border:1px solid var(--line);border-radius:20px;cursor:pointer;font-size:12px;color:var(--ink)}
+.checks input{accent-color:var(--primary)}
+.todo-row{display:grid;grid-template-columns:minmax(0,1fr) 120px 140px 32px;gap:6px;margin-bottom:6px}
+.inline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.search{min-width:180px;flex:1;max-width:280px}
+/* settings */
+.mem-row{display:grid;grid-template-columns:28px minmax(0,1fr) minmax(0,1fr) 44px 70px auto;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.mem-row input[type=color]{width:40px;height:30px;border:1px solid var(--line);border-radius:6px;padding:2px;background:#fff;cursor:pointer}
+.mem-row.off{opacity:.55}
+.mem-row .mail{grid-column:2/-1}
+details.help{background:var(--soft);border:1px solid var(--line);border-radius:9px;padding:10px 14px;margin-top:12px}
+details.help summary{cursor:pointer;font-weight:500}
+details.help ol{padding-left:20px;margin:8px 0 0}
+code{background:#eef1f5;padding:1px 5px;border-radius:4px;font-size:12px}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(15,25,40,.45);z-index:50;display:flex;align-items:flex-start;justify-content:center;padding:40px 16px;overflow:auto}
+.modal{background:#fff;border-radius:14px;width:100%;max-width:560px;box-shadow:0 20px 50px rgba(0,0,0,.25);animation:pop .15s ease-out}
+.modal.wide{max-width:820px}
+@keyframes pop{from{transform:translateY(8px);opacity:0}}
+.modal .mhd{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line)}
+.modal .mhd h3{margin:0;font-size:16px}
+.modal .mhd .icon-btn{color:var(--muted)}
+.modal .mbd{padding:18px}
+.modal .mft{display:flex;gap:8px;justify-content:flex-end;padding:12px 18px;border-top:1px solid var(--line);flex-wrap:wrap}
+.modal .mft .left{margin-right:auto}
+.pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.pick button{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;text-align:left}
+.pick button:hover{border-color:var(--primary-2);background:var(--primary-soft)}
+/* 自動メール確認 */
+.mailask{position:fixed;inset:0;background:rgba(15,25,40,.5);z-index:70;display:flex;align-items:center;justify-content:center;padding:16px}
+.mailask .box{background:#fff;border-radius:14px;max-width:520px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.3);overflow:hidden}
+.mailask .hd{padding:16px 20px;font-weight:700;font-size:16px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center}
+.mailask .bd{padding:14px 20px;font-size:13.5px}
+.mailask .pv{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-top:8px;white-space:pre-wrap;max-height:180px;overflow:auto;font-size:12.5px}
+.mailask .ft{padding:12px 20px;border-top:1px solid var(--line);display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none}
+.tst{background:#1f2937;color:#fff;padding:9px 16px;border-radius:9px;font-size:13px;box-shadow:0 8px 24px rgba(0,0,0,.2);animation:pop .2s}
+.tst.err{background:var(--danger)}
+.banner{background:var(--warn-soft);border:1px solid #f3d6b4;color:#8a4c10;border-radius:10px;padding:10px 14px;margin-bottom:16px;font-size:13px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.banner.err{background:var(--danger-soft);border-color:#f0c9c9;color:#9b2c2c}
+@media(max-width:980px){.split{grid-template-columns:1fr}.mlist{max-height:260px}}
+@media(max-width:820px){
+  .sidenav{position:fixed;bottom:0;top:auto;left:0;right:0;width:auto;height:auto;flex-direction:row;overflow-x:auto;padding:4px;border-right:0;border-top:1px solid var(--line);z-index:30;gap:0}
+  .nav-item{flex:1 0 auto;min-width:56px;flex-direction:column;gap:1px;font-size:10px;padding:6px 2px;align-items:center;text-align:center;white-space:nowrap;letter-spacing:-.03em}
+  #toast{bottom:84px}
+  .nav-item .nbadge{position:absolute;top:1px;right:14%;margin:0;font-size:10px;padding:0 5px;line-height:15px}
+  main{padding:16px 14px 92px}
+  .g2,.dash{grid-template-columns:1fr}
+  .t2,.mebox .nm{display:none}
+  .topbar{padding:0 12px}
+  .frow,.frow2{grid-template-columns:1fr}
+  .todo-row{grid-template-columns:1fr 1fr}
+  .todo-row .tx{grid-column:1/-1}
+  .cell{min-height:60px}
+  .chip{font-size:10px;padding:1px 3px}
+  .chat{height:calc(100vh - 200px)}
+  .mem-row{grid-template-columns:28px minmax(0,1fr) 44px auto}
+  .mem-row .role,.mem-row .act-lbl{display:none}
+}
+@media print{.topbar,.sidenav{display:none}}
+
+#updbar{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:9999;display:none;align-items:center;gap:12px;background:#1d4f91;color:#fff;padding:10px 14px;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.28);font-size:14px;max-width:calc(100vw - 24px)}
+#updbar.on{display:flex}
+#updbar button{border:0;border-radius:8px;padding:6px 14px;font-weight:700;background:#fff;color:#1d4f91;cursor:pointer}
+
+/* ---------- AI業務時間集計 ---------- */
+.wt-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table.wt{border-collapse:collapse;width:100%;min-width:560px;font-size:13px}
+table.wt th,table.wt td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+table.wt th{background:var(--soft);font-weight:700;position:sticky;top:0}
+table.wt th:first-child,table.wt td:first-child{text-align:left;position:sticky;left:0;background:var(--surface);z-index:1;min-width:150px}
+table.wt th:first-child{background:var(--soft)}
+table.wt th .av{vertical-align:middle;margin-right:4px}
+table.wt td.tot{font-weight:700;background:var(--soft)}
+table.wt tr.sub td{background:var(--primary-soft);font-weight:700;color:var(--primary)}
+table.wt tr.half td{background:#d9e6f8;font-weight:700;color:var(--primary)}
+table.wt tr.year td{background:var(--primary);color:#fff;font-weight:700}
+table.wt tr.sub td:first-child{background:var(--primary-soft)}table.wt tr.half td:first-child{background:#d9e6f8}table.wt tr.year td:first-child{background:var(--primary)}
+table.wt td .rng{color:var(--muted);font-size:11px;margin-left:6px;font-weight:400}
+table.wt td .wtnote{margin-left:8px;font-weight:600}
+input.wtin{width:78px;text-align:right;padding:4px 6px}
+.wt-charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.wt-chart{border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--surface);min-width:0}
+.wt-chart h4{margin:0 0 6px;display:flex;align-items:center;gap:8px;font-size:14px}
+.wt-chart h4 .tag{margin-left:auto}
+.wt-chart svg{width:100%;height:auto;display:block}
+.wt-item{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.wt-item .n{width:22px;text-align:right;color:var(--muted);font-size:12px;flex-shrink:0}
+.wt-item .inp{flex:1;min-width:0}
+.wt-people{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.wt-person{border:1px solid var(--line);border-radius:10px;padding:12px}
+.wt-person h4{margin:0 0 8px;display:flex;align-items:center;gap:8px;font-size:14px}
+.wt-person h4 .tag{margin-left:auto}
+@media(max-width:700px){
+  .wtzh{flex-wrap:wrap}.wtzh .zs{flex-basis:100%;margin:2px 0 0 0!important}
+  table.wt th:first-child,table.wt td:first-child{min-width:92px}
+  table.wt td .rng{display:block;margin-left:0}
+  table.wt td .wtnote{display:block;margin:3px 0 0;white-space:normal;max-width:132px;width:fit-content}
+  input.wtin{width:64px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">AI</div>
+    <div><div class="t1">AI・DX定例会</div><div class="t2">スケジュール ・ 議事録 ・ 資料 ・ メッセージ</div></div>
+  </div>
+  <div class="top-right">
+    <span id="mode" class="mode"></span>
+    <button id="syncBtn" class="icon-btn" data-act="sync" title="最新の状態に更新"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;transform-origin:50% 50%"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg></button>
+    <button class="mebox" id="mebox" data-act="nav" data-v="settings"></button>
+  </div>
+</header>
+<div class="layout">
+  <nav class="sidenav" id="nav"></nav>
+  <main id="main"></main>
+</div>
+<input type="file" id="fileInput" multiple hidden data-chg="fileInput">
+<input type="file" id="importInput" accept=".json,application/json" hidden data-chg="importInput">
+<div id="modalRoot"></div>
+<div id="updbar"><span>🔄 新しいバージョンがあります</span><button id="updBtn" type="button">更新する</button></div>
+<div id="toast"></div>
+
+<script>
+'use strict';
+/* ============================================================
+   設定：公開版では GAS のURLをHTMLに書きません。
+   配布する「専用リンク（…/#gas=URL）」を最初に1回開くと、その端末に保存されます。
+   ============================================================ */
+const DEFAULT_GAS_URL = '';  // 公開版：URLは埋め込まない（専用リンク #gas=… から各端末に保存）
+const APP_VERSION = '54';
+
+const LSK = {cache:'aidx_cache_v1', data:'aidx_data_v1', me:'aidx_me', gas:'aidx_gas_url', seen:'aidx_msg_seen'};
+const TABLES = ['members','meetings','minutes','files','messages','polls','answers','worktime'];
+const SCHEMA = {
+  json:{meetings:['attendance'], minutes:['attendees','todos'], polls:['slots'], answers:['marks'], messages:['to'], worktime:['hours','items']},
+  bool:{members:['active'], meetings:['cancelled'], files:['isLink','private'], messages:['pinned','notice'], answers:['submitted']},
+  num:{members:['order'], files:['size'], polls:['duration','round','reCount'], worktime:['period']}
+};
+const DEFAULT_MEMBERS = [['東社長','社長'],['松井常務','常務'],['大屋',''],['高木',''],['河崎',''],['斎藤','']];
+const PALETTE = ['#1d4f91','#14a39a','#e38b2c','#8e5bd6','#d44a4a','#2f9e5a','#c2185b','#5c6bc0','#00838f','#795548','#607d8b','#f06292'];
+const FILE_CATS = ['会議資料','参考資料','その他'];
+const LOCAL_FILE_MAX = 3*1024*1024, REMOTE_FILE_MAX = 25*1024*1024;
+
+/* ---------- 44期 会社年間カレンダー（2026/8/21〜2027/8/20）----------
+   年間カレンダーPDFの内容を転記。45期以降は下のデータを差し替えてください。 */
+const CO = (() => {
+  const start='2026-08-21', end='2027-08-20';
+  const ranges = [ // 土日以外の休日
+    ['2026-09-19','2026-09-23','シルバーウィーク休み'],
+    ['2026-12-26','2027-01-04','年末年始休日'],
+    ['2027-04-29','2027-05-05','ゴールデンウィーク休み'],
+    ['2027-07-19','2027-07-19','休日'],
+    ['2027-08-11','2027-08-15','夏季休日']
+  ];
+  const kou = ['2026-08-25','2026-09-08','2026-09-29','2026-10-13','2026-10-27','2026-11-10','2026-11-24','2026-12-08','2026-12-22','2027-01-12','2027-01-26','2027-02-09','2027-02-24','2027-03-09','2027-03-23','2027-04-06','2027-04-20','2027-05-11','2027-05-25','2027-06-08','2027-06-22','2027-07-06','2027-07-20','2027-08-03','2027-08-17'];
+  const uri = ['2026-09-11','2026-10-09','2026-11-06','2026-12-04','2027-01-08','2027-02-12','2027-03-12','2027-04-09','2027-05-14','2027-06-04','2027-07-09','2027-08-06'];
+  const work = {'2026-10-12':'スポーツの日：出勤','2026-11-03':'文化の日：出勤','2026-11-23':'勤労感謝の日：出勤','2027-01-11':'成人の日：出勤','2027-02-11':'建国記念の日：出勤','2027-02-23':'天皇誕生日：出勤','2027-03-22':'振替休日：出勤'};
+  const hol = {}, label = {};
+  const pd = s => { const [y,m,d] = s.split('-').map(Number); return new Date(y,m-1,d); };
+  const fm = d => d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  for(let d=pd(start); d<=pd(end); d.setDate(d.getDate()+1)){ if(d.getDay()===0||d.getDay()===6) hol[fm(d)] = ''; }
+  ranges.forEach(([a,b,l]) => { for(let d=pd(a); d<=pd(b); d.setDate(d.getDate()+1)){ const k = fm(d); hol[k] = l; if(k===a) label[k] = l; } });
+  return {start, end, hol, label, kou:new Set(kou), uri:new Set(uri), work};
+})();
+function coInfo(ds){
+  if(ds < CO.start || ds > CO.end) return null;
+  return {hol: ds in CO.hol, holName: CO.hol[ds]||'', label: CO.label[ds]||'', kou: CO.kou.has(ds), uri: CO.uri.has(ds), work: CO.work[ds]||''};
+}
+function coHint(ds){
+  const c = coInfo(ds); if(!c) return '';
+  const t = [];
+  if(c.hol) t.push(`会社の休日${c.holName?'（'+c.holName+'）':''}です`);
+  if(c.work) t.push(`${c.work}の日です`);
+  if(c.kou) t.push('工程会議の日です');
+  if(c.uri) t.push('売上報告会の日です');
+  return t.join(' ／ ');
+}
+
+/* ---------- utils ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2,7);
+const pad = n => String(n).padStart(2,'0');
+const ymd = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const today = () => ymd(new Date());
+const nowISO = () => new Date().toISOString();
+const WD = '日月火水木金土';
+function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function lsSet(k,v){ try{ localStorage.setItem(k,v); return true; }catch(e){ return false; } }
+function lsDel(k){ try{ localStorage.removeItem(k); }catch(e){} }
+function parseYmd(s){ const [y,m,d] = String(s).split('-').map(Number); return new Date(y,(m||1)-1,d||1); }
+function fmtDate(s, short){ if(!s) return ''; const d = parseYmd(s); return (short?'':d.getFullYear()+'/') + `${d.getMonth()+1}/${d.getDate()}（${WD[d.getDay()]}）`; }
+function daysUntil(s){ return Math.round((parseYmd(s) - parseYmd(today()))/86400000); }
+function fmtTime(mt){ return (mt.start||'') + (mt.end ? '〜'+mt.end : (mt.start?'〜':'')); }
+function fmtDT(iso){
+  if(!iso) return ''; const d = new Date(iso); if(isNaN(d)) return '';
+  const t = `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  if(ymd(d) === today()) return '今日 '+t;
+  return `${d.getMonth()+1}/${d.getDate()} ${t}`;
+}
+function fmtSize(n){ n = Number(n)||0; if(!n) return ''; if(n<1024) return n+' B'; if(n<1048576) return (n/1024).toFixed(0)+' KB'; return (n/1048576).toFixed(1)+' MB'; }
+function linkify(s){ return esc(s).replace(/(https?:\/\/[^\s<]+)/g,'<a href="$1" target="_blank" rel="noopener">$1</a>'); }
+function reEsc(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+const sortMeet = (a,b) => ((a.date||'')+(a.start||'')).localeCompare((b.date||'')+(b.start||''));
+function toast(msg, type){ const el = document.createElement('div'); el.className = 'tst '+(type||''); el.textContent = msg; $('#toast').appendChild(el); setTimeout(()=>el.remove(), type==='err'?5000:2600); }
+function val(id){ const el = document.getElementById(id); return el ? el.value : ''; }
+
+/* ---------- state ---------- */
+const now0 = new Date();
+const S = {
+  data: emptyData(), view:'dash', me: lsGet(LSK.me)||'',
+  calY: now0.getFullYear(), calM: now0.getMonth(), showPast:false,
+  selMin:null, minQ:'', fileQ:'', fileMeet:'', fileCat:'', upMeet:'', upCat:'会議資料', upPriv:'', minMeet:'', minUpMeet:null, agQ:'', agMeet:'', agUpMeet:null, msgToAll:true, msgToIds:[], pendCat:null, pendMeet:null, pendPriv:false, redoNext:false, redoId:'', upPrivMeet:'', privQ:'', privMeet:'',
+  wtPeriod:0, wtUnit:'month', todoMine:false, showCo:true, selPoll:null, pollFor:'', pollDraft:{}, draftSlots:[], error:null, lastSync:null, syncing:false
+};
+function emptyData(){ const d = {}; TABLES.forEach(t => d[t] = []); return d; }
+function gasUrl(){ return (lsGet(LSK.gas) || DEFAULT_GAS_URL || '').trim(); }
+function isRemote(){ return !!gasUrl(); }
+
+/* ---------- data layer ---------- */
+function normRec(t, r){
+  const o = {...r};
+  (SCHEMA.json[t]||[]).forEach(k => { if(typeof o[k] === 'string'){ try{ o[k] = o[k] ? JSON.parse(o[k]) : null; }catch(e){ o[k] = null; } } });
+  (SCHEMA.bool[t]||[]).forEach(k => { if(o[k] === '' || o[k] == null) delete o[k]; else if(typeof o[k] === 'string') o[k] = (o[k].toLowerCase() === 'true'); });
+  if(t==='meetings') o.cancelled = false; // 中止の扱いは廃止（登録されるのは開催した会のみ）
+  (SCHEMA.num[t]||[]).forEach(k => { if(o[k] !== '' && o[k] != null) o[k] = Number(o[k]); });
+  if(t==='meetings' && (!o.attendance || typeof o.attendance!=='object')) o.attendance = {};
+  if(t==='minutes'){ if(!Array.isArray(o.attendees)) o.attendees = []; if(!Array.isArray(o.todos)) o.todos = []; }
+  if(t==='members' && o.active === undefined) o.active = true;
+  if(t==='messages'){ if(o.pinned === undefined) o.pinned = false; if(!Array.isArray(o.to)) o.to = []; }
+  if(t==='polls'){ if(!Array.isArray(o.slots)) o.slots = []; if(!o.status) o.status = 'open'; }
+  if(t==='worktime'){ if(!o.hours || typeof o.hours !== 'object' || Array.isArray(o.hours)) o.hours = {}; if(!Array.isArray(o.items)) o.items = []; }
+  if(t==='answers'){ if(!o.marks || typeof o.marks !== 'object') o.marks = {}; if(o.submitted === undefined) o.submitted = false; }
+  return o;
+}
+async function api(payload){
+  const res = await fetch(gasUrl(), {method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(payload)});
+  if(!res.ok) throw new Error('HTTP '+res.status);
+  const j = await res.json();
+  if(!j.ok) throw new Error(j.error || 'サーバーエラー');
+  return j;
+}
+function setSync(on){ S.syncing = on; updateBusy(); }
+function updateBusy(){ const b = $('#syncBtn'); if(b){ const busy = S.syncing || writeBusy(); b.classList.toggle('spin', busy); b.title = writeBusy() ? '保存中…' : '最新の状態に更新'; } }
+
+/* ---------- 書き込みキュー：画面は即時更新、サーバー保存は裏でまとめて送る ---------- */
+const WQ = []; let wqRunning = false, writeSeq = 0, writeFailed = false;
+const writeBusy = () => WQ.length > 0 || wqRunning;
+function enqueueWrite(op){ WQ.push(op); writeSeq++; updateBusy(); saveCacheSoon(); flushWrites(); }
+let cacheTimer = null;
+function saveCacheSoon(){ clearTimeout(cacheTimer); cacheTimer = setTimeout(() => { try{ localStorage.setItem(LSK.cache, JSON.stringify({url:gasUrl(), data:S.data})); }catch(e){} }, 300); }
+async function flushWrites(){
+  if(wqRunning) return; wqRunning = true; updateBusy();
+  while(WQ.length){
+    let payload;
+    if(WQ[0].action === 'upsert'){
+      const map = new Map();   // 同じレコードの連続更新は最後の1回にまとめる
+      while(WQ.length && WQ[0].action === 'upsert' && map.size < 40){ const o = WQ.shift(); map.set(o.table + '|' + o.record.id, {table:o.table, record:o.record}); }
+      const items = [...map.values()];
+      payload = items.length === 1 ? {action:'upsert', table:items[0].table, record:items[0].record} : {action:'bulk', items};
+    }else payload = WQ.shift();
+    try{ await api(payload); }
+    catch(e){
+      if(payload.action === 'mail'){ toast('メールの送信に失敗しました（GASを「AI・DX定例会_GAS_06」に更新してあるか確認してください）：' + e.message, 'err'); }
+      else{ writeFailed = true; toast('サーバーへの保存に失敗しました：' + e.message + (/不正なテーブル名/.test(e.message) ? '（GASを「AI・DX定例会_GAS_06」に更新してください）' : ''), 'err'); }
+    }
+  }
+  wqRunning = false; updateBusy();
+  if(writeFailed){ writeFailed = false; await loadData(true); render(); toast('最新の状態を読み込み直しました。必要なら操作をやり直してください','err'); }
+}
+window.addEventListener('beforeunload', e => { if(writeBusy()){ e.preventDefault(); e.returnValue = ''; } });
+function applyData(raw){ const d = emptyData(); TABLES.forEach(t => d[t] = (raw[t]||[]).map(r => normRec(t,r))); return d; }
+let lastRaw = '';
+async function loadData(silent){
+  let changed = true;
+  if(isRemote()){
+    setSync(true);
+    try{
+      const seq0 = writeSeq;
+      const j = await api({action:'getAll'});
+      S.error = null; S.lastSync = new Date();
+      if(writeSeq !== seq0 || writeBusy()){ changed = false; }          // 読み込み中に保存した内容を上書きしない
+      else{
+        const raw = JSON.stringify(j.data);
+        changed = raw !== lastRaw; lastRaw = raw;
+        if(changed){ S.data = applyData(j.data); saveCacheSoon(); }
+      }
+    }catch(e){
+      S.error = e.message;
+      if(!silent) toast('サーバーに接続できません：'+e.message, 'err');
+    }finally{ setSync(false); }
+  }else{
+    const d = emptyData(); const raw = lsGet(LSK.data);
+    if(raw){ try{ const p = JSON.parse(raw); TABLES.forEach(t => d[t] = (p[t]||[]).map(r => normRec(t,r))); }catch(e){} }
+    S.data = d; S.error = null;
+  }
+  if(!S.data.members.length && !S.error) await seedMembers();
+  return changed;
+}
+// 前回読み込んだ共有データを即時表示（その後、裏で最新を取得）
+function loadCache(){
+  if(!isRemote()) return false;
+  try{ const c = JSON.parse(localStorage.getItem(LSK.cache) || 'null'); if(c && c.url === gasUrl() && c.data){ S.data = applyData(c.data); lastRaw = ''; return true; } }catch(e){}
+  return false;
+}
+async function seedMembers(){
+  const recs = DEFAULT_MEMBERS.map(([name,role],i) => ({id:uid()+i, name, role, color:PALETTE[i%PALETTE.length], active:true, order:i, updatedAt:nowISO()}));
+  S.data.members = recs;
+  if(isRemote()){ try{ await api({action:'bulk', items: recs.map(r => ({table:'members', record:r}))}); }catch(e){ toast('メンバー初期登録に失敗：'+e.message,'err'); } }
+  else persistLocal();
+}
+function persistLocal(){
+  if(!lsSet(LSK.data, JSON.stringify(S.data))) toast('この端末の保存容量を超えました。大きな資料はリンク登録にしてください','err');
+}
+async function saveRec(t, rec){
+  rec.updatedAt = nowISO(); rec.updatedBy = S.me || '';
+  const arr = S.data[t]; const i = arr.findIndex(x => x.id === rec.id);
+  if(i >= 0) arr[i] = rec; else arr.push(rec);
+  if(isRemote()) enqueueWrite({action:'upsert', table:t, record:rec});
+  else persistLocal();
+}
+async function saveMany(items){
+  items.forEach(({table,record}) => {
+    record.updatedAt = record.updatedAt || nowISO();
+    const arr = S.data[table]; const i = arr.findIndex(x => x.id === record.id);
+    if(i >= 0) arr[i] = record; else arr.push(record);
+  });
+  if(isRemote()) items.forEach(({table,record}) => enqueueWrite({action:'upsert', table, record}));
+  else persistLocal();
+}
+async function delRec(t, id){
+  S.data[t] = S.data[t].filter(x => x.id !== id);
+  if(isRemote()) enqueueWrite({action:'delete', table:t, id});
+  else persistLocal();
+}
+
+/* ---------- members ---------- */
+const mById = id => S.data.members.find(m => m.id === id);
+const mName = id => (mById(id)||{}).name || '（不明）';
+function activeMembers(){ return S.data.members.filter(m => m.active !== false).sort((a,b) => (a.order||0)-(b.order||0)); }
+function allMembersSorted(){ return [...S.data.members].sort((a,b) => (a.order||0)-(b.order||0)); }
+function avatar(id, size){
+  const m = mById(id); const c = m ? (m.color||'#999') : '#a0a8b5'; const n = m ? m.name : '?';
+  const st = size ? `width:${size}px;height:${size}px;font-size:${Math.round(size*.42)}px;` : '';
+  return `<span class="av" style="background:${esc(c)};${st}" title="${esc(n)}">${esc(n.charAt(0))}</span>`;
+}
+function pchip(id){ return `<span class="pchip">${avatar(id)}${esc(mName(id))}</span>`; }
+
+/* ---------- icons ---------- */
+const sv = p => `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+const IC = {
+  home: sv('<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>'),
+  cal: sv('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>'),
+  doc: sv('<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/>'),
+  folder: sv('<path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/>'),
+  list: sv('<path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/>'),
+  vote: sv('<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9l1.5 1.5L12 8M8 15l1.5 1.5L12 14M14.5 9.5H17M14.5 15.5H17"/>'),
+  chat: sv('<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/>'),
+  clock: sv('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>'),
+  gear: sv('<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M2.5 12h3M18.5 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/>')
+};
+const NAV = [['dash','ホーム',IC.home],['schedule','スケジュール',IC.cal],['poll','日程調整',IC.vote],['minutes','議事録',IC.doc],['agenda','議事次第',IC.list],['files','資料',IC.folder],['worktime','AI業務時間',IC.clock],['messages','メッセージ',IC.chat],['settings','設定',IC.gear]];
+
+function pollPending(){
+  if(!S.me) return 0;
+  return S.data.polls.filter(p => p.status === 'open' && !S.data.answers.some(a => a.pollId === p.id && a.memberId === S.me && a.submitted)).length;
+}
+function msgVisible(m){ const to = m.to || []; return !to.length || (!!S.me && (m.author === S.me || to.includes(S.me))); }
+function unreadCount(){
+  const seen = lsGet(LSK.seen) || '';
+  return S.data.messages.filter(m => msgVisible(m) && (m.actor||m.author) !== S.me && (m.createdAt||'') > seen).length;
+}
+function fileIcon(f){
+  if(!f.mime && f.url && !f.name.includes('.')) return `<span class="ficon" style="background:#7b8794">LINK</span>`;
+  const ext = (f.name.split('.').pop()||'').toLowerCase();
+  const map = {pdf:['#d44a4a','PDF'],xls:['#2f9e5a','XLS'],xlsx:['#2f9e5a','XLS'],xlsm:['#2f9e5a','XLS'],csv:['#2f9e5a','CSV'],doc:['#2d6bc0','DOC'],docx:['#2d6bc0','DOC'],ppt:['#e38b2c','PPT'],pptx:['#e38b2c','PPT'],png:['#8e5bd6','IMG'],jpg:['#8e5bd6','IMG'],jpeg:['#8e5bd6','IMG'],gif:['#8e5bd6','IMG'],mp4:['#c2185b','MOV'],mov:['#c2185b','MOV'],zip:['#795548','ZIP'],txt:['#607d8b','TXT'],dwg:['#00838f','DWG'],dxf:['#00838f','DXF']};
+  const [c,l] = map[ext] || (f.isLink ? ['#7b8794','LINK'] : ['#7b8794', (ext||'FILE').slice(0,4).toUpperCase()]);
+  return `<span class="ficon" style="background:${c}">${esc(l)}</span>`;
+}
+function meetLabel(mt){ return mt ? `${fmtDate(mt.date)} ${mt.title||''}` : ''; }
+
+/* ---------- render ---------- */
+function render(){
+  const ae = document.activeElement;
+  const keep = ae && ae.id && main.contains(ae) ? {id:ae.id, s:ae.selectionStart, e:ae.selectionEnd} : null;
+  const msgVal = val('msgInput');
+  renderTop(); renderNav();
+  const v = VIEWS[S.view] || VIEWS.dash;
+  main.innerHTML = banner() + v();
+  if(S.view === 'messages'){
+    const mi = $('#msgInput'); if(mi && msgVal) mi.value = msgVal;
+    const fd = $('#feed'); if(fd) fd.scrollTop = fd.scrollHeight;
+    const last = S.data.messages.reduce((a,m) => (m.createdAt||'') > a ? m.createdAt : a, '');
+    if(last) lsSet(LSK.seen, last);
+    renderNav();
+  }
+  if(S.view === 'files' || DOC[S.view]) bindDrop();
+  if(keep){ const el = document.getElementById(keep.id); if(el){ el.focus(); try{ el.setSelectionRange(keep.s, keep.e); }catch(e){} } }
+}
+const main = document.getElementById('main');
+function banner(){
+  if(S.error) return `<div class="banner err"><span>共有サーバー（GAS）に接続できません：${esc(S.error)}</span><button class="btn sm" data-act="sync">再接続</button></div>`;
+  if(!isRemote()) return `<div class="banner"><span><b>ローカルモード</b>：データはこの端末のブラウザにだけ保存されます。メンバーと共有するには「設定」でGASのURLを登録してください。</span><button class="btn sm" data-act="nav" data-v="settings">設定を開く</button></div>`;
+  return '';
+}
+function renderTop(){
+  const md = $('#mode');
+  if(S.error){ md.className = 'mode err'; md.textContent = '接続エラー'; }
+  else if(isRemote()){ md.className = 'mode remote'; md.textContent = '共有モード' + (S.lastSync ? ' ・ '+pad(S.lastSync.getHours())+':'+pad(S.lastSync.getMinutes())+'更新' : ''); }
+  else { md.className = 'mode local'; md.textContent = 'ローカルモード'; }
+  const me = mById(S.me);
+  $('#mebox').innerHTML = me ? `${avatar(me.id)}<span class="nm">${esc(me.name)}</span>` : `<span class="nm" style="padding-left:8px">利用者を選択</span>`;
+}
+function renderNav(){
+  const u = unreadCount(), pu = pollPending();
+  $('#nav').innerHTML = NAV.map(([k,l,i]) => `<button class="nav-item ${S.view===k?'on':''}" data-act="nav" data-v="${k}">${i}<span>${l}</span>${k==='messages'&&u&&S.view!=='messages'?`<span class="nbadge">${u}</span>`:''}${k==='poll'&&pu?`<span class="nbadge">${pu}</span>`:''}</button>`).join('');
+}
+
+/* ---------- attendance ---------- */
+const ATT = {yes:'出席', no:'欠席', maybe:'未定'};
+const attPast = mt => (mt.date||'') < today();
+function attSeg(mt, memId){
+  const past = attPast(mt);
+  let cur = (mt.attendance||{})[memId] || 'yes'; if(past && cur === 'maybe') cur = 'yes';
+  return `<span class="seg">${Object.entries(ATT).filter(([k]) => !(past && k === 'maybe')).map(([k,l]) => `<button class="${k} ${cur===k?'on':''}" data-act="att" data-meet="${mt.id}" data-mem="${memId}" data-v="${k}">${l}</button>`).join('')}</span>`;
+}
+function attAvatars(mt){
+  const a = mt.attendance || {};
+  return `<span class="avs">${activeMembers().map(m => { let s = a[m.id] || 'yes'; if(attPast(mt) && s === 'maybe') s = 'yes'; const mk = {yes:'✓',no:'×',maybe:'?'}[s]; return `<span class="avw" title="${esc(m.name)}：${ATT[s]}">${avatar(m.id)}<span class="st ${s}">${mk}</span></span>`; }).join('')}</span>`;
+}
+function attendeesOf(mt){ const a = mt.attendance || {}; return activeMembers().filter(m => !a[m.id] || a[m.id] === 'yes').map(m => m.id); }
+function attCounts(mt){
+  const a = mt.attendance || {}; const c = {yes:0,no:0,maybe:0};
+  const past = attPast(mt);
+  activeMembers().forEach(m => { let v = a[m.id]||'yes'; if(past && v === 'maybe') v = 'yes'; c[v]++; });
+  c.none = 0;
+  return c;
+}
+
+/* ---------- views ---------- */
+const VIEWS = {};
+
+VIEWS.dash = () => {
+  const t = today();
+  const up = S.data.meetings.filter(m => !m.cancelled && m.date >= t).sort(sortMeet);
+  const nx = up[0];
+  let hero;
+  const openPolls = S.data.polls.filter(p => p.status === 'open').sort((a,b) => (b.createdAt||'').localeCompare(a.createdAt||''));
+  if(openPolls.length){
+    hero = heroPoll(openPolls, nx);
+  }else if(nx){
+    const du = daysUntil(nx.date);
+    const c = attCounts(nx);
+    hero = `<div class="card hero">
+      <div class="hero-row"><div>
+        <div class="lbl">次回の定例会</div>
+        <div class="big">${fmtDate(nx.date)} ${esc(fmtTime(nx))}</div>
+        <div class="meta">${esc(nx.title||'AI・DX定例会')}${nx.place?' ／ '+linkify(nx.place):''}</div>
+      </div>
+      <span class="count ${du===0?'today':''}">${du===0?'本日開催':'あと '+du+' 日'}</span></div>
+      ${(() => { const d = meetDocs(nx), fl = [...d.agenda, ...d.other]; return `<div class="agenda" style="max-height:none"><div style="font-weight:700;margin-bottom:6px">登録資料</div>${fl.length ? fl.map(f => `<div style="display:flex;align-items:center;gap:8px;padding:4px 0"><span style="flex:1;min-width:0;overflow-wrap:anywhere">📄 ${esc(f.name)}</span><button class="btn sm" data-act="openFile" data-id="${f.id}">開く</button>${f.isLink?'':`<button class="btn sm" data-act="dlFile" data-id="${f.id}">⬇ ダウンロード</button>`}</div>`).join('') : '<div class="small" style="opacity:.85">登録されている資料はありません</div>'}</div>`; })()}
+      <div class="att-line">${attAvatars(nx)}<span class="small" style="opacity:.85">出席 ${c.yes} ・ 欠席 ${c.no}${attPast(nx)?'':' ・ 未定 '+c.maybe}</span></div>
+      <div class="att-line">${S.me?`<span class="small">あなたの出欠：</span>${attSeg(nx, S.me)}`:''}
+        <span style="flex:1"></span>${(() => { const rp = S.data.polls.find(x => x.meetingId === nx.id && x.status === 'closed'); return rp ? `<button class="btn sm" data-act="reschedule" data-id="${rp.id}">🔄 日程を再調整</button>` : ''; })()}<button class="btn sm" data-act="showMeet" data-id="${nx.id}">詳細</button></div>
+    </div>`;
+  }else{
+    hero = `<div class="card hero"><div class="lbl">次回の定例会</div><div class="big">予定が登録されていません</div>
+      <div class="att-line"><button class="btn" data-act="newMeet">＋ 決定済み定例会を登録</button></div></div>`;
+  }
+  // todos
+  let todos = allTodos().filter(x => !x.done);
+  if(S.todoMine) todos = todos.filter(x => x.owner === S.me);
+  todos.sort((a,b) => (a.due||'9999').localeCompare(b.due||'9999'));
+  const todoHtml = todos.length ? todos.slice(0,10).map(todoItem).join('') : `<div class="empty">未完了のToDoはありません</div>`;
+  // messages
+  const msgs = S.data.messages.filter(msgVisible).sort((a,b) => (b.createdAt||'').localeCompare(a.createdAt||'')).slice(0,4);
+  const msgHtml = msgs.length ? msgs.map(m => `<div class="li clickable" data-act="nav" data-v="messages">${m.notice?'<span class="av" style="background:#5b6b82" title="自動送信">🔔</span>':avatar(m.author)}<div class="grow"><div class="small muted">${m.notice?'自動送信':esc(mName(m.author))} ・ ${fmtDT(m.createdAt)}${endedTag(m)}</div><div class="ttl">${esc(m.text)}</div></div></div>`).join('') : `<div class="empty">メッセージはまだありません</div>`;
+  return `<div class="page-h"><div><h2>ホーム</h2><div class="sub">${fmtDate(t)}</div></div></div>
+    <div class="grid dash">
+      <div class="stack">${hero}
+      </div>
+      <div class="stack">
+        <div class="card"><h3>新着メッセージ <button class="link" data-act="nav" data-v="messages">開く</button></h3><div class="list">${msgHtml}</div></div>
+        <div class="card"><h3>今後の予定</h3><div class="list">${up.length>1?up.slice(1,5).map(meetRow).join(''):`<div class="empty">ほかの予定はありません</div>`}</div></div>
+      </div>
+    </div>`;
+};
+function allTodos(){ const out = []; S.data.minutes.forEach(mn => (mn.todos||[]).forEach(td => out.push({...td, minId:mn.id, minTitle:mn.title}))); return out; }
+function todoItem(td){
+  const over = td.due && !td.done && td.due < today();
+  return `<div class="todo ${td.done?'done':''}"><input type="checkbox" ${td.done?'checked':''} data-act="todoToggle" data-min="${td.minId}" data-todo="${td.id}">
+    <div style="flex:1;min-width:0"><div class="tx">${esc(td.text)}</div>
+    <div class="small muted inline" style="gap:10px">${td.owner?`<span>担当：${esc(mName(td.owner))}</span>`:''}${td.due?`<span class="due ${over?'over':''}">期限：${fmtDate(td.due,true)}${over?' 超過':''}</span>`:''}${td.minTitle!==null?`<button class="link" data-act="openMin" data-id="${td.minId}">${esc(td.minTitle||'議事録')}</button>`:''}</div></div></div>`;
+}
+function meetStatus(mt){
+  if(mt.cancelled) return `<span class="tag red">中止</span>`;
+  if(mt.date < today()) return `<span class="tag gray">終了</span>`;
+  if(mt.date === today()) return `<span class="tag orange">本日</span>`;
+  return `<span class="tag blue">予定</span>`;
+}
+function meetRow(mt){
+  const d = parseYmd(mt.date); const past = mt.date < today();
+  const c = attCounts(mt);
+  return `<div class="mrow" data-act="showMeet" data-id="${mt.id}">
+    <div class="dbox ${past?'past':''}"><div class="m">${d.getMonth()+1}月</div><div class="d">${d.getDate()}</div><div class="w">${WD[d.getDay()]}</div></div>
+    <div style="flex:1;min-width:0"><div class="inline" style="gap:6px"><b>${esc(mt.title||'AI・DX定例会')}</b>${meetStatus(mt)}</div>
+    <div class="small muted">${esc(fmtTime(mt))}${mt.place?' ／ '+esc(mt.place):''}</div>
+    <div class="small muted">出席 ${c.yes} ・ 欠席 ${c.no}${attPast(mt)?'':' ・ 未定 '+c.maybe}</div></div>
+    ${docTags(mt)}</div>`;
+}
+
+VIEWS.schedule = () => {
+  const y = S.calY, m = S.calM, t = today();
+  const first = new Date(y,m,1), sd = first.getDay();
+  const start = new Date(y,m,1-sd);
+  const byDate = {}; S.data.meetings.forEach(mt => (byDate[mt.date] = byDate[mt.date]||[]).push(mt));
+  const openPolls = S.data.polls.filter(p => p.status === 'open'); const candByDate = {};
+  openPolls.forEach(p => pollTally(p).forEach(r => { const d = (candByDate[r.slot.date] = candByDate[r.slot.date] || {}); (d[p.id] = d[p.id] || {poll:p, rows:[]}).rows.push(r); }));
+  let cells = '';
+  const weeks = Math.ceil((sd + new Date(y,m+1,0).getDate())/7);
+  for(let i=0; i<weeks*7; i++){
+    const d = new Date(start.getFullYear(), start.getMonth(), start.getDate()+i); const ds = ymd(d);
+    const co = S.showCo ? coInfo(ds) : null;
+    const cls = ['cell', d.getMonth()!==m?'out':'', ds===t?'today':'', d.getDay()===0?'sun':'', d.getDay()===6?'sat':'', co&&co.hol?'hol':''].join(' ');
+    const badges = co ? (co.label?`<span class="cobadge hl">${esc(co.label)}</span>`:'') + (co.work?`<span class="cobadge wk">${esc(co.work.replace('：',' '))}</span>`:'') + (co.kou?'<span class="cobadge kou">工程会議</span>':'') + (co.uri?'<span class="cobadge uri">売上報告会</span>':'') : '';
+    const chips = (byDate[ds]||[]).sort(sortMeet).map(mt => `<button class="chip ${mt.cancelled?'cancel':(ds<t?'past':'')}" data-act="showMeet" data-id="${mt.id}">${esc(mt.start||'')} ${esc(mt.title||'定例会')}</button>`).join('');
+    const cands = Object.values(candByDate[ds]||{}).map(c => { const st = c.rows.map(r => r.slot.start||'').sort()[0], en = c.rows.map(r => r.slot.end||'').sort().pop();
+      const tip = c.rows.map(r => `${r.slot.start||''}〜${r.slot.end||''}　×${r.x} △${r.t}`).join('\n');
+      return `<button class="chip cand" data-act="openPoll" data-id="${c.poll.id}" title="${esc(c.poll.title+' 日程調整の候補\n'+tip)}">日程候補<br>${esc(st)}-${esc(en)}</button>`; }).join('');
+    cells += `<div class="${cls}" data-act="newMeet" data-date="${ds}"><div class="dn">${d.getDate()}</div>${badges}${chips}${cands}</div>`;
+  }
+  const up = S.data.meetings.filter(mt => mt.date >= t).sort(sortMeet);
+  const past = S.data.meetings.filter(mt => mt.date < t).sort(sortMeet).reverse();
+  return `<div class="page-h"><div><h2>スケジュール</h2><div class="sub">日付をクリックすると、その日に定例会を登録できます</div></div><button class="btn primary" data-act="newMeet">＋ 定例会を登録</button></div>
+  <div class="grid" style="grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)" id="schGrid">
+    <div class="card">
+      <div class="cal-h"><button class="btn sm" data-act="calMove" data-d="-1">◀</button><div class="ym">${y}年${m+1}月</div><button class="btn sm" data-act="calMove" data-d="1">▶</button><button class="btn sm ghost" data-act="calMove" data-d="0">今月</button><span style="flex:1"></span><label class="small muted" style="display:flex;gap:5px;align-items:center;cursor:pointer"><input type="checkbox" data-chg="showCo" ${S.showCo?'checked':''}>会社カレンダーを表示</label></div>
+      <div class="cal">${[...WD].map((w,i) => `<div class="dow ${i===0?'sun':''} ${i===6?'sat':''}">${w}</div>`).join('')}${cells}</div>
+      ${openPolls.length?`<div class="legend"><span><i style="border:1px dashed #e38b2c"></i>日程調整の候補（クリックで回答・集計）</span></div>`:''}
+      ${S.showCo?`<div class="legend"><span><i style="background:#fdeefb;border:1px solid #f0c4ea"></i>会社休日</span><span><i style="border:1px solid #2d6bc0"></i>工程会議</span><span><i style="border:1px solid #d44a4a"></i>売上報告会</span><span>※44期（2026/8/21〜2027/8/20）の年間カレンダーより</span></div>`:''}
+    </div>
+    <div class="card"><h3>今後の定例会 <span class="tag">${up.length}件</span></h3>
+      ${openPolls.length?`<div class="list" style="margin-bottom:10px">${openPolls.map(p => `<div class="li clickable" data-act="openPoll" data-id="${p.id}"><span class="tag orange">調整中</span><div class="grow"><div class="ttl">${esc(p.title)} 日程調整</div><div class="small muted">候補 ${p.slots.length}件 ・ 回答 ${answeredCount(p)}/${activeMembers().length}名</div></div></div>`).join('')}</div>`:''}
+      <div class="list">${up.length?up.map(meetRow).join(''):'<div class="empty">今後の予定はありません</div>'}</div>
+      <div style="margin-top:12px"><button class="link" data-act="togglePast">${S.showPast?'▲ 過去の定例会を閉じる':'▼ 過去の定例会を表示（'+past.length+'件）'}</button></div>
+      ${S.showPast?`<div class="list" style="margin-top:6px">${past.length?past.map(meetRow).join(''):'<div class="empty">過去の記録はありません</div>'}</div>`:''}
+    </div>
+  </div>
+  <style>@media(max-width:1100px){#schGrid{grid-template-columns:1fr!important}}</style>`;
+};
+
+function minDate(mn){ if(mn.date) return mn.date; const mt = S.data.meetings.find(x => x.id === mn.meetingId); return mt ? mt.date : ''; }
+function sortedMinutes(){ return [...S.data.minutes].sort((a,b) => (minDate(b)+(b.createdAt||'')).localeCompare(minDate(a)+(a.createdAt||''))); }
+
+const DOC = {
+  minutes:{cat:'議事録', q:'minQ', meet:'minMeet', up:'minUpMeet', sub:'会議後に議事録をアップロードします。会議ごとに絞り込めます'},
+  agenda:{cat:'議事次第', q:'agQ', meet:'agMeet', up:'agUpMeet', sub:'会議までに議事次第をアップロードします。会議ごとに絞り込めます'}
+};
+function latestPastMeetId(){
+  const m = [...S.data.meetings].filter(x => x.date <= today() && !x.cancelled).sort(sortMeet).pop();
+  return m ? m.id : '';
+}
+function nextMeetId(){
+  const m = [...S.data.meetings].filter(x => x.date >= today() && !x.cancelled).sort(sortMeet)[0];
+  if(m) return m.id;
+  const p = S.data.polls.filter(x => x.status === 'open').sort((a,b) => (b.createdAt||'').localeCompare(a.createdAt||''))[0];
+  return p ? 'poll:' + p.id : '';
+}
+function docUpMeetId(view){ const c = DOC[view]; return S[c.up] !== null ? S[c.up] : (view === 'agenda' ? nextMeetId() : latestPastMeetId()); }
+function setPrivPending(){ S.pendCat = '個人用'; S.pendMeet = S.upPrivMeet || ''; S.pendPriv = true; }
+function setDocPending(view){ S.pendCat = DOC[view].cat; S.pendMeet = docUpMeetId(view); }
+function docView(view){
+  const c = DOC[view], q = (S[c.q]||'').trim().toLowerCase();
+  let fs = visFiles().filter(f => f.category === c.cat);
+  if(S[c.meet]) fs = fs.filter(f => fileInRef(f, S[c.meet]));
+  if(q) fs = fs.filter(f => (f.name+' '+(f.note||'')).toLowerCase().includes(q));
+  const dt = f => { const mt = S.data.meetings.find(x => x.id === f.meetingId); return (mt ? mt.date : (f.pollId ? '9999-99-99' : '0000-00-00')) + (f.createdAt||''); };
+  fs.sort((a,b) => dt(b).localeCompare(dt(a)));
+  const rows = fs.length ? fs.map(f => `<div class="li">${fileIcon(f)}<div class="grow">
+      <div class="ttl"><a href="#" data-act="openFile" data-id="${f.id}">${esc(f.name)}</a>${privTag(f)}</div>
+      <div class="small muted">${esc(fileMeetLabel(f)||'（会議未指定）')} ・ ${esc(mName(f.uploader))} ・ ${fmtDT(f.createdAt)}${f.size?' ・ '+fmtSize(f.size):''}</div>
+      ${f.note?`<div class="small">${esc(f.note)}</div>`:''}</div>
+      <button class="btn sm" data-act="openFile" data-id="${f.id}">開く</button>${f.isLink?'':`<button class="btn sm" data-act="dlFile" data-id="${f.id}">⬇ ダウンロード</button>`}<button class="btn sm danger" data-act="delFile" data-id="${f.id}">削除</button></div>`).join('') : `<div class="empty">${c.cat}がありません</div>`;
+  const limit = isRemote() ? '1ファイル25MBまで・Googleドライブに保存' : 'ローカルモードでは3MBまで（大きいファイルはリンク登録）';
+  return `<div class="page-h"><div><h2>${c.cat}</h2><div class="sub">${c.sub}</div></div></div>
+    <div class="grid zones">
+    <div class="card zone up">
+      <div class="zone-h"><span class="zi">⬆</span>${c.cat}を登録する<span class="zs">ここから登録します</span></div>
+      <div class="f"><label>紐づける定例会</label><select class="inp" style="max-width:420px" data-chg="upField" data-key="${c.up}">${meetOptions(docUpMeetId(view))}</select></div>
+      <div class="drop" id="drop" data-act="pickDoc" data-view="${view}"><div class="big">ここに${c.cat}のファイルをドロップ</div><div class="small muted">またはクリックして選択（${limit}）</div></div>
+    </div>
+    <div class="card zone view">
+      <div class="zone-h"><span class="zi">📂</span>${c.cat}を見る<span class="zs">保存済みのファイルを探して開きます</span></div>
+      <div class="fbar"><input class="inp search" id="${c.q}" data-inp="${c.q}" placeholder="ファイル名・メモで検索" value="${esc(S[c.q]||'')}">
+        <select class="inp" style="max-width:300px" data-chg="filt" data-key="${c.meet}">${meetOptions(S[c.meet],'すべての定例会')}</select>
+        <span class="tag">${fs.length}件</span></div>
+      <div class="list">${upRows(u => u.category === c.cat && !u.private)}${rows}</div>
+    </div></div>`;
+}
+VIEWS.minutes = () => docView('minutes');
+VIEWS.agenda = () => docView('agenda');
+function minFilesCard(q){
+  let fs = visFiles().filter(f => f.category === '議事録');
+  if(q) fs = fs.filter(f => (f.name+' '+(f.note||'')).toLowerCase().includes(q));
+  const dt = f => { const mt = S.data.meetings.find(x => x.id === f.meetingId); return mt ? mt.date : (f.createdAt||'').slice(0,10); };
+  fs.sort((a,b) => dt(b).localeCompare(dt(a)));
+  return `<div class="card" style="margin-bottom:16px"><h3>アップロードされた議事録 <span class="tag">${fs.length}件</span></h3>
+    ${fs.length?`<div class="list">${fs.map(fileLi).join('')}</div>`:'<div class="empty">議事録ファイルはまだありません。定例会の詳細、または「資料」からアップロードできます</div>'}</div>`;
+}
+function minDetail(mn){
+  const mt = S.data.meetings.find(x => x.id === mn.meetingId);
+  const files = mn.meetingId ? visFiles().filter(f => f.meetingId === mn.meetingId) : [];
+  const todos = (mn.todos||[]).map(td => todoItem({...td, minId:mn.id, minTitle:null})).join('');
+  return `<div class="inline" style="justify-content:space-between;align-items:flex-start">
+      <div><h3 style="margin:0;font-size:18px">${esc(mn.title||'議事録')}</h3>
+      <div class="small muted">${fmtDate(minDate(mn))}${mt?' '+esc(fmtTime(mt))+(mt.place?' ／ '+esc(mt.place):''):''} ・ 作成 ${esc(mName(mn.author))}${mn.updatedAt?' ・ 更新 '+fmtDT(mn.updatedAt):''}</div></div>
+      <div class="inline"><button class="btn sm" data-act="copyMin" data-id="${mn.id}">テキストをコピー</button><button class="btn sm" data-act="printMin" data-id="${mn.id}">印刷・PDF</button><button class="btn sm primary" data-act="editMin" data-id="${mn.id}">編集</button></div></div>
+    <div class="sec"><h4>出席者</h4><div class="chips">${mn.attendees.length?mn.attendees.map(pchip).join(''):'<span class="muted small">未記入</span>'}</div></div>
+    <div class="sec"><h4>議事内容</h4><div class="box pre">${mn.body?linkify(mn.body):'<span class="muted">未記入</span>'}</div></div>
+    <div class="sec"><h4>決定事項</h4><div class="box pre">${mn.decisions?linkify(mn.decisions):'<span class="muted">なし</span>'}</div></div>
+    <div class="sec"><h4>ToDo</h4>${todos||'<div class="muted small">なし</div>'}</div>
+    ${files.length?`<div class="sec"><h4>関連資料</h4><div class="list">${files.map(fileLi).join('')}</div></div>`:''}
+    <div class="sec" style="text-align:right"><button class="btn sm danger" data-act="delMin" data-id="${mn.id}">この議事録を削除</button></div>`;
+}
+
+const upRows = (pred) => (S.uploading||[]).filter(pred).map(u => `<div class="li" style="opacity:.75"><span class="spinner-sm" style="width:20px;height:20px;border:3px solid #cdd9ea;border-top-color:var(--primary-2);border-radius:50%;animation:spin 1s linear infinite;flex-shrink:0"></span><div class="grow"><div class="ttl">${esc(u.name)}</div><div class="small muted">アップロード中…${u.size?' ・ '+fmtSize(u.size):''}</div></div></div>`).join('');
+function fileVisible(f){ return !f.private || (!!S.me && f.uploader === S.me); }
+function visFiles(){ return S.data.files.filter(fileVisible); }
+const privTag = f => f.private ? ' <span class="tag orange" title="アップした本人だけに表示されます">🔒 自分だけ</span>' : '';
+function fileLi(f){
+  const ml = fileMeetLabel(f);
+  return `<div class="li">${fileIcon(f)}<div class="grow"><div class="ttl"><a href="#" data-act="openFile" data-id="${f.id}">${esc(f.name)}</a>${privTag(f)}</div>
+    <div class="small muted">${esc(f.category||'')}${ml?' ・ '+esc(ml):''} ・ ${esc(mName(f.uploader))} ・ ${fmtDT(f.createdAt)}${f.size?' ・ '+fmtSize(f.size):''}</div>${f.note?`<div class="small">${esc(f.note)}</div>`:''}</div></div>`;
+}
+function meetDocs(mt){
+  const fs = visFiles().filter(f => f.meetingId === mt.id);
+  return {agenda: fs.filter(f => f.category === '議事次第'), minF: fs.filter(f => f.category === '議事録'),
+    other: fs.filter(f => f.category !== '議事次第' && f.category !== '議事録'), minApp: S.data.minutes.filter(x => x.meetingId === mt.id)};
+}
+function docTags(mt){
+  if(mt.cancelled) return '';
+  const d = meetDocs(mt), hasMin = d.minF.length, up = mt.date >= today();
+  let t = '';
+  if(up) t += `<span class="tag ${d.agenda.length?'green':'orange'}">議事次第${d.agenda.length?'あり':' 未'}</span>`;
+  else if(d.agenda.length) t += `<span class="tag green">議事次第あり</span>`;
+  if(hasMin) t += `<span class="tag green">議事録あり</span>`;
+  else if(!up) t += `<span class="tag orange">議事録 未</span>`;
+  return `<div class="inline" style="gap:4px;justify-content:flex-end;flex-shrink:0">${t}</div>`;
+}
+// 【日程決定】の通知で、その日が過ぎていれば「終了しました」を付ける
+function endedTag(m){
+  if(!m.notice || !/^【日程決定】/.test(m.text||'')) return '';
+  const g = (m.text||'').match(/日時：(\d{4})\/(\d{1,2})\/(\d{1,2})/); if(!g) return '';
+  const d = `${g[1]}-${pad(+g[2])}-${pad(+g[3])}`;
+  return d < today() ? ' <span class="tag" style="background:#eef0f3;color:#6b7686;border-color:#d9dee6">終了しました</span>' : '';
+}
+async function postNotice(text){
+  try{ await saveRec('messages', {id:uid(), author:'system', actor:S.me, text, to:[], createdAt:nowISO(), pinned:false, notice:true}); }catch(e){}
+  sendNoticeMail(text);
+}
+// 自動通知をメールでも送る（共有モードのみ・メールアドレスを登録したメンバーへ）
+function sendNoticeMail(text){
+  if(!isRemote()) return;
+  const to = activeMembers().map(m => (m.email||'').trim()).filter(Boolean);
+  if(!to.length) return;
+  const lines = String(text).split('\n');
+  const subject = `【AI・DX定例会】${lines[0].replace(/^【(.+?)】/, '$1：')}`.slice(0, 120);
+  const body = `${text}\n\n実行：${S.me ? mName(S.me) : '—'}\n──────────\nこのメールは「AI・DX定例会」アプリから自動送信されています。\n詳しくはアプリを開いて確認してください。`;
+  const names = activeMembers().filter(m => (m.email||'').trim()).map(m => m.name);
+  mailAskChain = mailAskChain.then(async () => {
+    if(await askMail(subject, text, names)) enqueueWrite({action:'mail', to, subject, body});
+    else toast('自動メールは送りませんでした（アプリ内の通知は送信済み）');
+  });
+}
+let mailAskChain = Promise.resolve();
+// 「全員に自動メールを送る」確認画面（アプリ内の通知は送信済み。メールを送るかだけを選ぶ）
+function askMail(subject, text, names){
+  return new Promise(resolve => {
+    const ov = document.createElement('div'); ov.className = 'mailask';
+    ov.innerHTML = `<div class="box" role="dialog" aria-modal="true">
+      <div class="hd">✉ 全員に自動メールを送りますか？</div>
+      <div class="bd">
+        <div>送り先：<b>${names.map(esc).join('、')}</b>（${names.length}名）</div>
+        <div class="small muted" style="margin-top:2px">件名：${esc(subject)}</div>
+        <div class="pv">${esc(text)}</div>
+        <div class="small muted" style="margin-top:8px">アプリ内のメッセージ（自動通知）は、どちらを選んでも送信されます。</div>
+      </div>
+      <div class="ft"><button class="btn" data-mail="no">メールは送らない</button><button class="btn primary" data-mail="yes">✉ 全員にメールを送る</button></div></div>`;
+    document.body.appendChild(ov);
+    const done = v => { ov.remove(); resolve(v); };
+    ov.querySelector('[data-mail=yes]').addEventListener('click', e => { e.stopPropagation(); done(true); });
+    ov.querySelector('[data-mail=no]').addEventListener('click', e => { e.stopPropagation(); done(false); });
+    ov.querySelector('[data-mail=yes]').focus();
+  });
+}
+function meetWhen(mt){ return `${fmtDate(mt.date)}${fmtTime(mt)?' '+fmtTime(mt):''}`; }
+const isGeneralFile = f => f.category !== '議事次第' && f.category !== '議事録' && !f.private;
+function refFields(ref){ ref = ref || ''; return ref.startsWith('poll:') ? {meetingId:'', pollId:ref.slice(5)} : {meetingId:ref, pollId:''}; }
+function fileInRef(f, ref){ return ref.startsWith('poll:') ? f.pollId === ref.slice(5) : f.meetingId === ref; }
+function fileMeetLabel(f){
+  if(f.meetingId){ const mt = S.data.meetings.find(x => x.id === f.meetingId); return mt ? meetLabel(mt) : ''; }
+  if(f.pollId){ const p = S.data.polls.find(x => x.id === f.pollId); return p ? p.title + '（日程調整中）' : ''; }
+  return '';
+}
+function meetOptions(selId, emptyLabel){
+  const ms = [...S.data.meetings].sort(sortMeet).reverse();
+  const ps = S.data.polls.filter(p => p.status === 'open');
+  return `<option value="">${esc(emptyLabel||'（会議を指定しない）')}</option>` + ps.map(p => `<option value="poll:${p.id}" ${'poll:'+p.id===selId?'selected':''}>${esc(p.title)}（日程調整中）</option>`).join('') + ms.map(m => `<option value="${m.id}" ${m.id===selId?'selected':''}>${esc(meetLabel(m))}</option>`).join('');
+}
+VIEWS.files = () => {
+  const q = S.fileQ.trim().toLowerCase();
+  let fs = visFiles().filter(isGeneralFile).sort((a,b) => (b.createdAt||'').localeCompare(a.createdAt||''));
+  if(S.fileMeet) fs = fs.filter(f => fileInRef(f, S.fileMeet));
+  if(S.fileCat) fs = fs.filter(f => f.category === S.fileCat);
+  if(q) fs = fs.filter(f => (f.name+' '+(f.note||'')).toLowerCase().includes(q));
+  const rows = fs.length ? fs.map(f => `<div class="li">${fileIcon(f)}<div class="grow">
+      <div class="ttl"><a href="#" data-act="openFile" data-id="${f.id}">${esc(f.name)}</a>${privTag(f)}</div>
+      <div class="small muted">${esc(f.category||'')}${fileMeetLabel(f)?' ・ '+esc(fileMeetLabel(f)):''} ・ ${esc(mName(f.uploader))} ・ ${fmtDT(f.createdAt)}${f.size?' ・ '+fmtSize(f.size):''}</div>
+      ${f.note?`<div class="small">${esc(f.note)}</div>`:''}</div>
+      <button class="btn sm" data-act="openFile" data-id="${f.id}">開く</button>${f.isLink?'':`<button class="btn sm" data-act="dlFile" data-id="${f.id}">⬇ ダウンロード</button>`}<button class="btn sm danger" data-act="delFile" data-id="${f.id}">削除</button></div>`).join('') : `<div class="empty">資料がありません</div>`;
+  const limit = isRemote() ? '1ファイル25MBまで・Googleドライブに保存' : 'ローカルモードでは3MBまで（大きいファイルはリンク登録）';
+  return `<div class="page-h"><div><h2>資料</h2><div class="sub">定例会で使う資料を保存・共有します</div></div><button class="btn" data-act="linkFile">🔗 リンクを登録</button></div>
+    <div class="grid zones">
+    <div class="card zone up">
+      <div class="zone-h"><span class="zi">⬆</span>資料を保存する<span class="zs">ここから保存します</span></div>
+      <div class="frow2" style="margin-bottom:10px">
+        <div class="f" style="margin:0"><label>紐づける定例会</label><select class="inp" data-chg="upField" data-key="upMeet">${meetOptions(S.upMeet)}</select></div>
+        <div class="f" style="margin:0"><label>分類</label><select class="inp" data-chg="upField" data-key="upCat">${FILE_CATS.map(c => `<option ${c===S.upCat?'selected':''}>${c}</option>`).join('')}</select></div>
+      </div>
+      <div class="drop" id="drop" data-act="pickFile"><div class="big">ここにファイルをドロップ</div><div class="small muted">またはクリックして選択（${limit}）</div></div>
+    </div>
+    <div class="card zone view">
+      <div class="zone-h"><span class="zi">📂</span>資料を見る<span class="zs">保存済みのファイルを探して開きます</span></div>
+      <div class="fbar"><input class="inp search" id="fileQ" data-inp="fileQ" placeholder="ファイル名・メモで検索" value="${esc(S.fileQ)}">
+        <select class="inp" style="max-width:280px" data-chg="filt" data-key="fileMeet">${meetOptions(S.fileMeet,'すべての定例会')}</select>
+        <select class="inp" style="max-width:160px" data-chg="filt" data-key="fileCat"><option value="">すべての分類</option>${FILE_CATS.map(c => `<option ${c===S.fileCat?'selected':''}>${c}</option>`).join('')}</select>
+        <span class="tag">${fs.length}件</span></div>
+      <div class="list">${upRows(u => !u.private && u.category !== '議事録' && u.category !== '議事次第')}${rows}</div>
+    </div></div>${privSection()}`;
+};
+function privSection(){
+  if(!S.me) return '';
+  const q = (S.privQ||'').trim().toLowerCase();
+  let fs = S.data.files.filter(f => f.private && f.uploader === S.me).sort((a,b) => (b.createdAt||'').localeCompare(a.createdAt||''));
+  if(S.privMeet) fs = fs.filter(f => fileInRef(f, S.privMeet));
+  if(q) fs = fs.filter(f => (f.name+' '+(f.note||'')).toLowerCase().includes(q));
+  const rows = fs.length ? fs.map(f => `<div class="li">${fileIcon(f)}<div class="grow">
+      <div class="ttl"><a href="#" data-act="openFile" data-id="${f.id}">${esc(f.name)}</a></div>
+      <div class="small muted">${fileMeetLabel(f)?esc(fileMeetLabel(f))+' ・ ':''}${fmtDT(f.createdAt)}${f.size?' ・ '+fmtSize(f.size):''}</div>
+      ${f.note?`<div class="small">${esc(f.note)}</div>`:''}</div>
+      <button class="btn sm" data-act="openFile" data-id="${f.id}">開く</button>${f.isLink?'':`<button class="btn sm" data-act="dlFile" data-id="${f.id}">⬇ ダウンロード</button>`}<button class="btn sm danger" data-act="delFile" data-id="${f.id}">削除</button></div>`).join('') : `<div class="empty">個人用の資料はありません</div>`;
+  const limit = isRemote() ? '1ファイル25MBまで' : 'ローカルモードでは3MBまで';
+  return `<div class="zone-title">🔒 個人用<small>${esc(mName(S.me))}さんだけに表示されます（ほかのメンバーには見えません）</small></div>
+    <div class="grid zones">
+    <div class="card zone priv up">
+      <div class="zone-h"><span class="zi">⬆</span>個人用の資料を保存する<span class="zs">自分だけが見られます</span></div>
+      <div class="f"><label>紐づける定例会（任意）</label><select class="inp" data-chg="upField" data-key="upPrivMeet">${meetOptions(S.upPrivMeet)}</select></div>
+      <div class="drop" id="dropPriv" data-act="pickPriv"><div class="big">ここに個人用ファイルをドロップ</div><div class="small muted">またはクリックして選択（${limit}）</div></div>
+    </div>
+    <div class="card zone priv view">
+      <div class="zone-h"><span class="zi">📂</span>個人用の資料を見る<span class="zs">${fs.length}件</span></div>
+      <div class="fbar"><input class="inp search" id="privQ" data-inp="privQ" placeholder="ファイル名・メモで検索" value="${esc(S.privQ||'')}">
+        <select class="inp" style="max-width:300px" data-chg="filt" data-key="privMeet">${meetOptions(S.privMeet,'すべての定例会')}</select></div>
+      <div class="list">${upRows(u => u.private && u.uploader === S.me)}${rows}</div>
+    </div></div>`;
+}
+
+function fmtMsg(t){
+  let h = linkify(t);
+  S.data.members.forEach(m => {
+    const re = new RegExp('@' + reEsc(esc(m.name)), 'g');
+    h = h.replace(re, `<span class="mention">@${esc(m.name)}</span>`);
+  });
+  return h;
+}
+VIEWS.messages = () => {
+  const msgs = S.data.messages.filter(msgVisible).sort((a,b) => (a.createdAt||'').localeCompare(b.createdAt||''));
+  const pins = msgs.filter(m => m.pinned);
+  const me = mById(S.me);
+  let last = ''; let feed = '';
+  msgs.forEach(m => {
+    const d = m.createdAt ? ymd(new Date(m.createdAt)) : '';
+    if(d !== last){ feed += `<div class="dsep"><span>${fmtDate(d)}</span></div>`; last = d; }
+    const mine = (m.actor||m.author) === S.me;
+    const priv = (m.to||[]).length > 0;
+    const tome = me && !mine && ((m.text||'').includes('@'+me.name) || (priv && m.to.includes(S.me)));
+    const t = new Date(m.createdAt);
+    feed += `<div class="msg ${mine?'mine':''} ${tome?'tome':''}">${m.notice?'<span class="av" style="background:#5b6b82;width:32px;height:32px;font-size:15px" title="自動送信">🔔</span>':avatar(m.author,32)}<div style="min-width:0;max-width:78%">
+      <div class="mh"><b>${m.notice?'自動送信':esc(mName(m.author))}</b><span class="small muted">${isNaN(t)?'':pad(t.getHours())+':'+pad(t.getMinutes())}</span>${endedTag(m)}${m.pinned?'<span class="tag orange">📌 ピン留め</span>':''}${m.notice?`<span class="tag green">🔔 自動通知</span>${(m.actor||m.author)&&mById(m.actor||m.author)?`<span class="tag">実行：${esc(mName(m.actor||m.author))}</span>`:''}`:''}${priv?`<span class="tag blue" title="宛先を限定したメッセージ">🔒 宛先：${esc(m.to.map(mName).join('、'))}</span>`:''}</div>
+      <div class="bub"><div class="body">${fmtMsg(m.text||'')}</div></div>
+      <div class="ops">${priv?'':`<button class="link" data-act="pinMsg" data-id="${m.id}">${m.pinned?'ピン解除':'ピン留め'}</button>`}${mine?`<button class="link" style="color:var(--danger)" data-act="delMsg" data-id="${m.id}">削除</button>`:''}</div></div></div>`;
+  });
+  const names = activeMembers().map(m => `<button class="btn sm ghost" data-act="mention" data-name="${esc(m.name)}">@${esc(m.name)}</button>`).join('');
+  return `<div class="page-h"><div><h2>メッセージ</h2><div class="sub">連絡事項・共有事項を全員、または選んだメンバーにだけ送れます（@名前 で相手を強調）</div></div></div>
+    <div class="card chat">
+      ${pins.length?`<div class="pins"><b>📌 ピン留め</b>${pins.map(p => `<div class="pin">${p.notice?'自動送信':esc(mName(p.author))}：${esc((p.text||'').slice(0,120))}</div>`).join('')}</div>`:''}
+      <div class="feed" id="feed">${feed||'<div class="empty">最初のメッセージを送ってみましょう</div>'}</div>
+      <div style="padding:8px 12px 2px;border-top:1px solid var(--line)"><div class="small muted" style="margin-bottom:4px">宛先</div>
+        <div class="checks"><label style="border-color:var(--primary);background:var(--primary-soft)"><input type="checkbox" data-chg="msgToAll" ${S.msgToAll?'checked':''}><b>全員</b></label>${activeMembers().filter(m => m.id !== S.me).map(m => `<label><input type="checkbox" data-chg="msgToOne" data-id="${m.id}" ${!S.msgToAll&&S.msgToIds.includes(m.id)?'checked':''}>${esc(m.name)}</label>`).join('')}</div></div>
+      <div style="padding:4px 10px 0;display:flex;gap:2px;flex-wrap:wrap">${names}</div>
+      <div class="composer" style="border-top:0"><textarea class="inp" id="msgInput" rows="2" placeholder="${S.me?'メッセージを入力（Ctrl+Enter で送信）':'右上で利用者を選択してください'}"></textarea><button class="btn primary" data-act="sendMsg">送信</button></div>
+    </div>`;
+};
+
+/* ===== 日程調整 ===== */
+const PM = {o:'○', t:'△', x:'×', n:'−'};
+const toMin = s => { const [a,b] = String(s||'').split(':').map(Number); return a*60+b; };
+const fmtMin = n => pad(Math.floor(n/60)) + ':' + pad(n%60);
+function durLabel(m){ m = Number(m)||0; if(!m) return ''; const hh = Math.floor(m/60), mm = m%60; return (hh?hh+'時間':'') + (mm?mm+'分':''); }
+const roundOf = t => { const m = String(t||'').match(/第\s*(\d+)\s*回/); return m ? Number(m[1]) : 0; };
+function nextRound(){
+  const mx = Math.max(0, ...S.data.meetings.map(m => roundOf(m.title)), ...S.data.polls.map(p => Number(p.round) || roundOf(p.title)));
+  return mx ? mx + 1 : '';
+}
+function slotLabel(s){ return `${fmtDate(s.date,true)} ${s.start||''}${s.end?'〜'+s.end:''}`; }
+function sortedSlots(p){ return [...p.slots].sort((a,b) => (a.date+(a.start||'')).localeCompare(b.date+(b.start||''))); }
+function slotHint(s){
+  const parts = []; const c = coHint(s.date); if(c) parts.push(c);
+  if(S.data.meetings.some(m => m.date === s.date && !m.cancelled)) parts.push('他の定例会あり');
+  return parts.join(' ／ ');
+}
+function ansTarget(){ const t = S.pollFor; return (t && t !== S.me && activeMembers().some(m => m.id === t)) ? t : S.me; }
+function targetAnswer(p){ const t = ansTarget(); return S.data.answers.find(a => a.pollId === p.id && a.memberId === t); }
+function myAnswer(p){ return S.data.answers.find(a => a.pollId === p.id && a.memberId === S.me); }
+function ansByMem(p){ const o = {}; S.data.answers.filter(a => a.pollId === p.id).forEach(a => o[a.memberId] = a); return o; }
+function pollCell(a, sid){ if(!a || !a.submitted) return 'n'; return a.marks[sid] || 'o'; }
+function answeredCount(p){ const by = ansByMem(p); return activeMembers().filter(m => by[m.id] && by[m.id].submitted).length; }
+function getDraft(p){
+  const key = p.id + '_' + ansTarget();
+  if(!S.pollDraft[key]){ const a = targetAnswer(p); S.pollDraft[key] = {marks:{...(a?a.marks:{})}, comment:a?(a.comment||''):'', dirty:false}; }
+  return S.pollDraft[key];
+}
+function pollTally(p){
+  const mems = activeMembers(), by = ansByMem(p);
+  return sortedSlots(p).map(s => {
+    const r = {slot:s, o:0, t:0, x:0, n:0, xs:[], ts:[]};
+    mems.forEach(m => { const c = pollCell(by[m.id], s.id); r[c]++; if(c==='x') r.xs.push(m.id); if(c==='t') r.ts.push(m.id); });
+    return r;
+  });
+}
+
+const reTag = p => (p.reCount||0) > 0 ? `<span class="tag red" style="font-weight:700">🔄 再調整（${p.reCount}回目）</span>` : '';
+function heroPoll(ps, nx){
+  const p = ps[0], mems = activeMembers(), by = ansByMem(p);
+  const ans = m => !!(by[m.id] && by[m.id].submitted);
+  const un = mems.filter(m => !ans(m));
+  const meDone = S.me && ans({id:S.me});
+  const chips = mems.map(m => { const a = ans(m);
+    return `<span style="display:inline-flex;align-items:center;gap:6px;padding:3px 10px 3px 4px;border-radius:99px;font-size:12px;${a?'background:rgba(255,255,255,.14);opacity:.85':'background:rgba(255,176,64,.3);border:1px solid rgba(255,208,128,.8);font-weight:700'}">${avatar(m.id,20)}${esc(m.name)}<span>${a?'✓':'未回答'}</span></span>`; }).join('');
+  const dl = p.deadline ? `<span class="tag ${p.deadline < today()?'red':'orange'}" style="margin-left:6px">回答期限 ${fmtDate(p.deadline,true)}</span>` : '';
+  const others = ps.slice(1).map(o => `<div class="small" style="opacity:.9">他に調整中：<b>${esc(o.title)}</b>（回答 ${answeredCount(o)}/${mems.length}名） <button class="link" style="color:#cfe6ff" data-act="openPoll" data-id="${o.id}">開く</button></div>`).join('');
+  const sub = nx ? `<div class="agenda" style="max-height:none"><span class="small" style="opacity:.8">確定済みの直近の定例会：</span> <b>${esc(fmtDate(nx.date))} ${esc(fmtTime(nx))}</b> ${esc(nx.title||'')} <button class="link" style="color:#cfe6ff" data-act="showMeet" data-id="${nx.id}">詳細</button></div>` : '';
+  return `<div class="card hero">
+    <div class="hero-row"><div>
+      <div class="lbl">次回の定例会</div>
+      <div class="big">${esc(p.title)}</div>
+      <div class="meta"><span class="tag orange">日程調整中</span> 日時は未定です ・ 候補 ${p.slots.length}件${p.place?' ・ '+esc(p.place):''}${dl}</div>
+    </div>${(p.reCount||0)>0?`<div style="background:#ff5a3c;color:#fff;font-weight:800;font-size:15px;padding:8px 16px;border-radius:99px;box-shadow:0 4px 14px rgba(0,0,0,.25);letter-spacing:.03em;white-space:nowrap">🔄 再調整（${p.reCount}回目）</div>`:''}</div>
+    <div class="agenda" style="max-height:none"><div style="font-weight:700;margin-bottom:8px">回答状況 ${answeredCount(p)}/${mems.length}名${un.length?`　<span style="color:#ffd9a0">未回答：${un.map(m => esc(m.name)).join('、')}</span>`:'　<span style="color:#b6f0c8">全員回答済み</span>'}</div>
+      <div class="inline" style="gap:6px;flex-wrap:wrap">${chips}</div></div>
+    <div class="att-line"><button class="btn ${S.me&&!meDone?'primary':''}" style="${S.me&&!meDone?'background:#fff;color:var(--primary);border-color:#fff;font-weight:700':''}" data-act="openPoll" data-id="${p.id}">${S.me&&!meDone?'回答する':'日程調整を開く'}</button><button class="btn" data-act="redoPoll" data-id="${p.id}">🔄 日程を再調整</button></div>
+    ${sub}${others?`<div class="att-line" style="flex-direction:column;align-items:flex-start;gap:4px">${others}</div>`:''}
+  </div>`;
+}
+function pollHomeCard(){
+  const ps = S.data.polls.filter(p => p.status === 'open');
+  if(!ps.length) return '';
+  const n = activeMembers().length;
+  const rows = ps.map(p => {
+    const done = S.me && myAnswer(p) && myAnswer(p).submitted;
+    const dl = p.deadline ? `<span class="tag ${p.deadline < today()?'red':'orange'}">回答期限 ${fmtDate(p.deadline,true)}</span>` : '';
+    return `<div class="li clickable" data-act="openPoll" data-id="${p.id}"><div class="grow"><div class="ttl">${esc(p.title)} 日程調整</div><div class="small muted">候補 ${p.slots.length}件 ・ 回答 ${answeredCount(p)}/${n}名 ${dl}</div></div>${done?'<span class="tag green">回答済み</span>':'<span class="btn sm primary">回答する</span>'}</div>`;
+  }).join('');
+  return `<div class="card" style="border-left:4px solid var(--warn)"><h3>日程調整中 <button class="link" data-act="nav" data-v="poll">開く</button></h3><div class="list">${rows}</div></div>`;
+}
+VIEWS.poll = () => {
+  const p = S.selPoll && S.data.polls.find(x => x.id === S.selPoll);
+  return p ? pollDetail(p) : pollList();
+};
+function pollList(){
+  const ps = [...S.data.polls].sort((a,b) => (a.status===b.status ? 0 : a.status==='open'?-1:1) || (b.createdAt||'').localeCompare(a.createdAt||''));
+  const n = activeMembers().length;
+  const rows = ps.map(p => {
+    const mt = S.data.meetings.find(m => m.id === p.meetingId);
+    return `<div class="mrow" data-act="openPoll" data-id="${p.id}"><div style="flex:1;min-width:0"><div class="inline" style="gap:6px"><b>${esc(p.title)} 日程調整</b>${p.status==='open'?'<span class="tag orange">調整中</span>'+reTag(p):'<span class="tag green">確定</span>'}</div>
+      <div class="small muted">候補 ${p.slots.length}件 ・ 回答 ${answeredCount(p)}/${n}名 ・ 作成 ${esc(mName(p.createdBy))}${p.deadline&&p.status==='open'?' ・ 回答期限 '+fmtDate(p.deadline,true):''}</div>
+      ${p.status!=='open'&&mt?`<div class="small">確定：${fmtDate(mt.date)} ${esc(fmtTime(mt))}</div>`:''}</div><div class="inline" style="gap:6px;flex-shrink:0">${p.status==='open'?`<button class="btn sm" data-act="redoPoll" data-id="${p.id}">🔄 日程を再調整</button>`:(!mt || mt.date >= today()?`<button class="btn sm" data-act="reschedule" data-id="${p.id}">🔄 日程を再調整</button><button class="btn sm danger" data-act="unconfirm" data-id="${p.id}">確定取消</button>`:'')}<button class="btn sm danger" data-act="delPoll" data-id="${p.id}">削除</button></div></div>`;
+  }).join('');
+  return `<div class="page-h"><div><h2>日程調整</h2><div class="sub">各自が出席できない日時を入力し、最後に集計を見て日程を確定します</div></div><button class="btn primary" data-act="newPoll">＋ 日程調整を作成</button></div>
+    <div class="card">${rows||'<div class="empty">日程調整はまだありません。「日程調整を作成」から候補日時を登録してください</div>'}</div>`;
+}
+function pollDetail(p){
+  const slots = sortedSlots(p), mems = activeMembers(), by = ansByMem(p), tally = pollTally(p);
+  const open = p.status === 'open';
+  const sub = mems.filter(m => by[m.id] && by[m.id].submitted);
+  const un = mems.filter(m => !(by[m.id] && by[m.id].submitted));
+    
+  const head = mems.map(m => `<th style="${by[m.id]&&by[m.id].submitted?'':'opacity:.45'}" title="${by[m.id]&&by[m.id].submitted?'回答済み':'未回答'}">${avatar(m.id)}<div style="font-weight:500">${esc(m.name)}</div>${by[m.id]&&by[m.id].proxyBy?`<div class="small" style="color:#b5661a;font-size:10px;white-space:nowrap">代理 ${esc(mName(by[m.id].proxyBy))}</div>`:''}</th>`).join('');
+  const body = tally.map(r => {
+    const conf = !open && p.confirmedSlot === r.slot.id;
+    const hint = slotHint(r.slot);
+    return `<tr class="${conf?'conf':''}"><td><b>${esc(slotLabel(r.slot))}</b> ${conf?'<span class="tag blue">確定</span>':''}${open&&p.prevSlot===r.slot.id?' <span class="tag red">前回確定（取消）</span>':''}${hint?`<div class="small" style="color:#b5661a">${esc(hint)}</div>`:''}</td>
+      ${mems.map(m => { const c = pollCell(by[m.id], r.slot.id); return `<td><span class="pm ${c}">${PM[c]}</span></td>`; }).join('')}
+      <td><b style="color:var(--ok)">${r.o}</b></td><td><b style="color:#b5661a">${r.t}</b></td><td><b style="color:var(--danger)">${r.x}</b></td>
+      <td>${open?`<button class="btn sm primary" data-act="confirmSlot" data-poll="${p.id}" data-slot="${r.slot.id}">この日時で確定</button>`:''}</td></tr>`;
+  }).join('');
+  const comments = mems.filter(m => by[m.id] && by[m.id].comment).map(m => `<div class="li" style="align-items:flex-start">${avatar(m.id)}<div class="grow"><b>${esc(m.name)}</b>${by[m.id].proxyBy?` <span class="tag orange">代理 ${esc(mName(by[m.id].proxyBy))}</span>`:''}<div class="pre small">${esc(by[m.id].comment)}</div></div></div>`).join('');
+  // my answer
+  let mine = '';
+  if(open){
+    if(!S.me) mine = `<div class="card"><h3>あなたの回答</h3><div class="empty">右上で利用者を選択してください<br><button class="btn sm" style="margin-top:8px" data-act="askMe">利用者を選択</button></div></div>`;
+    else{
+      const tg = ansTarget(), proxy = tg !== S.me, ta = targetAnswer(p);
+      const d = getDraft(p), done = ta && ta.submitted;
+      mine = `<div class="card"${proxy?' style="border-left:4px solid var(--warn)"':''}><h3>${proxy?`<span class="tag orange">代理入力</span> ${esc(mName(tg))}さんの回答`:`あなたの回答（${esc(mName(S.me))}）`}${done?(d.dirty?'<span class="tag orange">未送信の変更あり</span>':'<span class="tag green">回答済み</span>'):'<span class="tag red">未回答</span>'}</h3>
+        <div class="inline" style="margin-bottom:8px;gap:8px"><label class="small muted" for="pollFor">回答する人</label><select class="inp" id="pollFor" data-chg="pollFor" style="width:auto"><option value="${S.me}">自分（${esc(mName(S.me))}）</option>${activeMembers().filter(m => m.id !== S.me).map(m => `<option value="${m.id}" ${m.id===tg?'selected':''}>${esc(m.name)}さんの代理</option>`).join('')}</select>${proxy?`<span class="small" style="color:#b5661a">${esc(mName(tg))}さんの回答を「代理 ${esc(mName(S.me))}」として登録します</span>`:''}</div>
+        ${proxy&&ta&&!ta.proxyBy&&ta.submitted?`<div class="small" style="color:#b5661a;margin-bottom:6px">※ ${esc(mName(tg))}さん本人が回答済みです。送信すると上書きされます。</div>`:''}
+        <div class="small muted" style="margin-bottom:6px">出席できない日時は <b style="color:var(--danger)">×</b>、都合がつくか微妙な日時は <b style="color:#b5661a">△</b> を選んでください。何も選ばなければ出席可能（○）です。</div>
+        <div class="list">${[...new Set(slots.map(s => s.date))].map(ds => { const hint = slotHint({date:ds});
+          return `<div class="li" style="background:var(--soft);border-radius:8px;padding:6px 10px;margin-top:6px"><div class="grow"><b>${esc(fmtDate(ds,true))}</b>${hint?` <span class="small" style="color:#b5661a">${esc(hint)}</span>`:''}</div><button class="btn sm" data-act="pday" data-poll="${p.id}" data-date="${ds}" data-v="x">この日はすべて×</button><button class="btn sm ghost" data-act="pday" data-poll="${p.id}" data-date="${ds}" data-v="o">すべて○</button></div>` +
+          slots.filter(s => s.date === ds).map(s => { const cur = d.marks[s.id] || 'o';
+            return `<div class="li" style="padding-left:18px"><div class="grow"><div class="ttl">${esc(s.start||'')}${s.end?'〜'+esc(s.end):''}</div></div>
+            <span class="seg">${[['o','○ 可','yes'],['t','△','maybe'],['x','× 不可','no']].map(([k,l,c]) => `<button class="${c} ${cur===k?'on':''}" data-act="pmark" data-poll="${p.id}" data-slot="${s.id}" data-v="${k}">${l}</button>`).join('')}</span></div>`; }).join(''); }).join('')}</div>
+        <div class="f" style="margin-top:12px"><label>コメント（任意）</label><textarea class="inp" id="pollComment" rows="2" placeholder="例：午前中なら可能です" data-poll="${p.id}">${esc(d.comment)}</textarea></div>
+        <div class="inline"><button class="btn primary" data-act="psubmit" data-poll="${p.id}">${done?'回答を更新する':'この内容で回答する'}</button><button class="btn" data-act="pallok" data-poll="${p.id}">すべて出席可能として回答</button></div></div>`;
+    }
+  }
+  const mt = S.data.meetings.find(m => m.id === p.meetingId);
+  const confBox = !open ? `<div class="card" style="background:var(--primary-soft);border-color:#cddcf2"><div class="inline" style="justify-content:space-between"><div><div class="small muted">確定した日程</div><div style="font-size:18px;font-weight:700">${mt?esc(fmtDate(mt.date)+' '+fmtTime(mt)):'（定例会が削除されています）'}</div></div>
+    <div class="inline">${mt?`<button class="btn" data-act="showMeet" data-id="${mt.id}">定例会の詳細</button>`:''}<button class="btn danger" data-act="unconfirm" data-id="${p.id}">確定取消</button>${!mt || (mt.date >= today())?`<button class="btn" data-act="reschedule" data-id="${p.id}">日程を再調整する</button>`:''}</div></div></div>` : '';
+  const reBanner = open && p.prevSlot ? (() => { const ps = p.slots.find(s => s.id === p.prevSlot); return `<div class="banner" style="margin:0"><span><b>再調整中</b>${ps?'：前回確定した '+esc(slotLabel(ps))+' は取り消されました。':''}回答を見直して、あらためて確定してください。</span></div>`; })() : '';
+  const dl = p.deadline && open ? `<span class="tag ${p.deadline<today()?'red':'orange'}">回答期限 ${fmtDate(p.deadline)}</span>` : '';
+  return `<div class="page-h"><div><button class="link" data-act="pollBack">◀ 日程調整の一覧</button><h2>${esc(p.title)} 日程調整 ${open?'<span class="tag orange">調整中</span>':'<span class="tag green">確定</span>'} ${open?reTag(p):''}</h2>
+    <div class="sub">作成 ${esc(mName(p.createdBy))}${p.duration?' ・ 会議予定時間：'+durLabel(p.duration):''}${p.place?' ・ 場所：'+esc(p.place):''} ${dl}</div></div><div class="inline">${open?`<button class="btn sm" data-act="editPoll" data-id="${p.id}">編集</button><button class="btn sm" data-act="redoPoll" data-id="${p.id}">🔄 日程を再調整</button>`:''}<button class="btn danger sm" data-act="delPoll" data-id="${p.id}">削除</button></div></div>
+    <div class="stack">${confBox}${reBanner}
+    ${p.agenda?`<div class="card"><h3>議題</h3><div class="pre">${linkify(p.agenda)}</div></div>`:''}
+    ${open?`<div class="card"><h3>議事次第・資料 <span class="inline"><button class="btn sm" data-act="upFor" data-ref="poll:${p.id}" data-cat="議事次第">＋ 議事次第</button><button class="btn sm" data-act="upFor" data-ref="poll:${p.id}" data-cat="会議資料">＋ 資料</button></span></h3>${visFiles().filter(x => x.pollId === p.id).length?`<div class="list">${visFiles().filter(x => x.pollId === p.id).map(fileLi).join('')}</div>`:'<div class="small muted">まだアップされていません。日程が確定すると、定例会に引き継がれます</div>'}</div>`:''}
+    ${mine}
+    <div class="card"><h3>集計（回答 ${sub.length}/${mems.length}名）</h3>
+      ${un.length?`<div class="small muted" style="margin-bottom:8px">未回答：${un.map(m => esc(m.name)).join('、')}</div>`:''}
+      <div style="overflow:auto"><table class="ptable" style="width:100%;border-collapse:collapse;min-width:${300+mems.length*64}px"><thead><tr><th>候補日時</th>${head}<th>○</th><th>△</th><th>×</th><th></th></tr></thead><tbody>${body}</tbody></table></div>
+      <div class="small muted" style="margin-top:8px">回答済みの人だけを集計しています。確定すると定例会としてスケジュールに登録されます。</div></div>
+    ${comments?`<div class="card"><h3>コメント</h3><div class="list">${comments}</div></div>`:''}</div>`;
+}
+function slotChips(){
+  const ss = [...S.draftSlots].sort((a,b) => (a.date+(a.start||'')).localeCompare(b.date+(b.start||'')));
+  if(!ss.length) return '<span class="muted small">まだ候補がありません</span>';
+  const dates = [...new Set(ss.map(s => s.date))];
+  return `<div class="inline" style="justify-content:space-between;margin-bottom:6px"><span class="small muted">候補 ${ss.length}件（${dates.length}日）</span><button class="btn sm danger" data-act="clearSlots">すべて削除</button></div>
+    <div style="max-height:220px;overflow:auto;border:1px solid var(--line);border-radius:8px;padding:6px 10px">${dates.map(ds => `<div class="inline" style="gap:6px;padding:4px 0;border-bottom:1px dashed var(--line)"><b style="min-width:92px">${esc(fmtDate(ds,true))}</b><div class="chips" style="flex:1">${ss.filter(s => s.date === ds).map(s => `<span class="pchip" style="padding:2px 4px 2px 10px">${esc(s.start||'')}${s.end?'〜'+esc(s.end):''}<button class="link" style="padding:0 6px" data-act="rmSlot" data-id="${s.id}">×</button></span>`).join('')}</div><button class="link" style="color:var(--danger)" data-act="rmDate" data-date="${ds}">この日を削除</button></div>`).join('')}</div>`;
+}
+
+VIEWS.settings = () => {
+  const mems = allMembersSorted();
+  const rows = mems.map((m,i) => `<div class="mem-row ${m.active===false?'off':''}">
+    ${avatar(m.id)}
+    <input class="inp" value="${esc(m.name)}" data-chg="memField" data-id="${m.id}" data-f="name" placeholder="名前">
+    <input class="inp role" value="${esc(m.role||'')}" data-chg="memField" data-id="${m.id}" data-f="role" placeholder="役職など">
+    <input type="color" value="${esc(m.color||'#1d4f91')}" data-chg="memField" data-id="${m.id}" data-f="color" title="表示色">
+    <label class="small inline" style="gap:4px;cursor:pointer"><input type="checkbox" ${m.active!==false?'checked':''} data-chg="memField" data-id="${m.id}" data-f="active"><span class="act-lbl">在籍</span></label>
+    <div class="inline" style="gap:2px"><button class="btn sm ghost" data-act="memMove" data-id="${m.id}" data-d="-1" ${i===0?'disabled':''}>↑</button><button class="btn sm ghost" data-act="memMove" data-id="${m.id}" data-d="1" ${i===mems.length-1?'disabled':''}>↓</button><button class="btn sm danger" data-act="memDel" data-id="${m.id}">削除</button></div>
+    <div class="mail inline" style="gap:6px;flex-wrap:nowrap"><input class="inp" type="email" style="flex:1;min-width:0;font-size:12.5px;padding-top:5px;padding-bottom:5px" value="${esc(m.email||'')}" data-chg="memField" data-id="${m.id}" data-f="email" placeholder="✉ メールアドレス（自動通知の送り先・空欄なら送らない）"><button class="btn sm" data-act="testMail" data-id="${m.id}" title="このアドレスにテストメールを送る">✉ テスト</button></div>
+  </div>`).join('');
+  return `<div class="page-h"><div><h2>設定</h2><div class="sub">利用者・メンバー・共有サーバーの設定</div></div></div>
+  <div class="grid g2">
+    <div class="stack">
+      <div class="card"><h3>あなたは誰ですか？</h3>
+        <select class="inp" data-chg="setMe"><option value="">選択してください</option>${activeMembers().map(m => `<option value="${m.id}" ${m.id===S.me?'selected':''}>${esc(m.name)}</option>`).join('')}</select>
+        <div class="small muted" style="margin-top:6px">投稿者・出欠・ToDoの「自分の担当」に使います（この端末に記憶）。</div></div>
+      <div class="card"><h3>メンバー <span class="tag">在籍 ${activeMembers().length}名</span></h3>
+        ${rows}
+        <div class="inline" style="margin-top:12px"><input class="inp" id="newMemName" placeholder="追加する名前" style="flex:1;min-width:120px"><input class="inp" id="newMemRole" placeholder="役職（任意）" style="width:130px"><button class="btn primary" data-act="addMember">追加</button></div>
+        <div class="small muted" style="margin-top:8px">✉ メールアドレスを登録した人には、自動通知（議事録・議事次第のアップ、日程決定・取消・再調整）がメールでも届きます（共有モードのみ）。<br>退任したメンバーは「在籍」のチェックを外すと、過去の議事録や出欠の記録を残したまま一覧から外れます。</div>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card"><h3>共有サーバー（GAS）</h3>
+        <div class="small muted" style="margin-bottom:6px">アプリのバージョン：${APP_VERSION}</div>
+        <div class="small" style="margin-bottom:8px">現在：${isRemote()?'<span class="tag green">共有モード</span>':'<span class="tag orange">ローカルモード</span>'}${DEFAULT_GAS_URL?' <span class="tag">HTMLにURL埋め込み済み</span>':''}</div>
+        <div class="f"><label>GAS WebアプリのURL</label><input class="inp" id="gasInput" value="${esc(lsGet(LSK.gas)||'')}" placeholder="${esc(DEFAULT_GAS_URL||'https://script.google.com/macros/s/…/exec')}"></div>
+        <div class="inline"><button class="btn primary" data-act="saveGas">保存して接続</button><button class="btn" data-act="testGas">接続テスト</button>${lsGet(LSK.gas)?'<button class="btn ghost" data-act="clearGas">この端末の設定を消去</button>':''}</div>
+        <details class="help"><summary>GASの準備手順</summary><ol class="small">
+          <li>Googleスプレッドシートを新規作成（名前例：AI・DX定例会_データ）</li>
+          <li>「拡張機能」→「Apps Script」を開き、同梱の <code>AI・DX定例会_GAS_06.gs</code> の内容を貼り付けて保存</li>
+          <li>「デプロイ」→「新しいデプロイ」→ 種類「ウェブアプリ」<br>実行ユーザー：<b>自分</b> ／ アクセス：<b>全員</b></li>
+          <li>表示されたURL（…/exec）を上の欄に貼り付けて「保存して接続」</li>
+          <li>全員に配る場合は、専用リンク（アプリのURLの末尾に <code>#gas=（GASのURL）</code> を付けたもの）を社内だけで配ります。最初に1回開くと各端末に保存されます</li>
+        </ol><div class="small muted" style="margin-top:6px">シート（members / meetings / minutes / files / messages / polls / answers / worktime）と、ドライブの「AI・DX定例会_資料」フォルダは自動で作成されます。</div></details>
+      </div>
+      <div class="card"><h3>バックアップ</h3>
+        <div class="inline"><button class="btn" data-act="exportJson">JSONで書き出し</button><button class="btn" data-act="importJson">JSONを読み込み</button></div>
+        <div class="small muted" style="margin-top:6px">ローカルモードで入力したデータを共有モードへ移すときにも使えます（読み込みは同じIDを上書き・新規は追加）。</div></div>
+    </div>
+  </div>`;
+};
+
+/* ---------- modal ---------- */
+function openModal(title, body, foot, wide){
+  $('#modalRoot').innerHTML = `<div class="ov" data-act="ovClose"><div class="modal ${wide?'wide':''}"><div class="mhd"><h3>${title}</h3><button class="icon-btn" data-act="closeModal">×</button></div><div class="mbd">${body}</div>${foot?`<div class="mft">${foot}</div>`:''}</div></div>`;
+  const f = $('#modalRoot .mbd input:not([type=checkbox]):not([type=hidden]), #modalRoot .mbd textarea'); if(f && !f.value) f.focus();
+}
+function closeModal(){ $('#modalRoot').innerHTML = ''; S.openMeet = null; }
+const modalOpen = () => !!$('#modalRoot').innerHTML;
+
+function showMeeting(id){
+  const mt = S.data.meetings.find(x => x.id === id); if(!mt){ closeModal(); return; }
+  S.openMeet = id;
+  const dc = meetDocs(mt);
+  const rows = activeMembers().map(m => `<tr><td><span class="inline" style="gap:8px">${avatar(m.id)}${esc(m.name)}${m.id===S.me?' <span class="tag blue">あなた</span>':''}</span></td><td style="text-align:right">${attSeg(mt, m.id)}</td></tr>`).join('');
+  const c = attCounts(mt);
+  const body = `<div class="inline" style="gap:8px;margin-bottom:6px">${meetStatus(mt)}<b style="font-size:16px">${fmtDate(mt.date)} ${esc(fmtTime(mt))}</b></div>
+    ${mt.place?`<div class="small">場所：${linkify(mt.place)}</div>`:''}
+    <div class="sec"><h4>議題</h4><div class="box pre">${mt.agenda?linkify(mt.agenda):'<span class="muted">未登録</span>'}</div></div>
+    <div class="sec"><h4>出欠（出席 ${c.yes} ・ 欠席 ${c.no}${attPast(mt)?'':' ・ 未定 '+c.maybe}）</h4><table class="att-table">${rows}</table></div>
+    <div class="sec"><h4>議事次第 <button class="btn sm" style="margin-left:auto" data-act="upFor" data-id="${id}" data-cat="議事次第">＋ アップロード</button></h4>${dc.agenda.length?`<div class="list">${dc.agenda.map(fileLi).join('')}</div>`:'<div class="small muted">まだアップされていません</div>'}</div>
+    <div class="sec"><h4>議事録 <button class="btn sm" style="margin-left:auto" data-act="upFor" data-id="${id}" data-cat="議事録">＋ アップロード</button></h4>${dc.minF.length?`<div class="list">${dc.minF.map(fileLi).join('')}</div>`:''}${!dc.minF.length?'<div class="small muted">まだアップされていません</div>':''}</div>
+    <div class="sec"><h4>その他の資料 <button class="btn sm" style="margin-left:auto" data-act="upFor" data-id="${id}" data-cat="会議資料">＋ アップロード</button></h4>${dc.other.length?`<div class="list">${dc.other.map(fileLi).join('')}</div>`:'<div class="small muted">まだありません</div>'}</div>`;
+  const foot = `<button class="btn danger left" data-act="delMeet" data-id="${id}">削除</button>
+    ${(() => { const rp = S.data.polls.find(x => x.meetingId === id && x.status === 'closed'); return rp && mt.date >= today() && !mt.cancelled ? `<button class="btn" data-act="reschedule" data-id="${rp.id}">日程を再調整</button>` : ''; })()}
+    <button class="btn" data-act="filesForMeet" data-id="${id}">資料を追加</button>
+    <button class="btn primary" data-act="editMeet" data-id="${id}">編集</button>`;
+  openModal(esc(mt.title||'AI・DX定例会'), body, foot);
+}
+function editMeeting(id, date){
+  const mt = id ? S.data.meetings.find(x => x.id === id) : null;
+  const last = [...S.data.meetings].sort(sortMeet).pop();
+  const d = mt || {title:'AI・DX定例会', date: date||today(), start: last?last.start:'', end: last?last.end:'', place: last?last.place:'', agenda:''};
+  const body = `<div class="f"><label>会議名</label><input class="inp" id="f_title" value="${esc(d.title)}"></div>
+    <div class="frow"><div class="f"><label>日付</label><input type="date" class="inp" id="f_date" data-chg="meetDateHint" value="${esc(d.date)}"><div class="hint" id="f_hint">${esc(coHint(d.date))}</div></div>
+    <div class="f"><label>開始</label><input type="time" class="inp" id="f_start" value="${esc(d.start||'')}"></div>
+    <div class="f"><label>終了</label><input type="time" class="inp" id="f_end" value="${esc(d.end||'')}"></div></div>
+    <div class="f"><label>場所・Web会議URL</label><input class="inp" id="f_place" value="${esc(d.place||'')}" placeholder="例：本社2F会議室 / Teams URL"></div>
+    <div class="f"><label>議題</label><textarea class="inp" id="f_agenda" rows="5" placeholder="1. 前回ToDoの確認&#10;2. …">${esc(d.agenda||'')}</textarea></div>`;
+  openModal(mt?'定例会を編集':'定例会を登録', body, `<button class="btn" data-act="${mt?'showMeet':'closeModal'}" data-id="${id||''}">キャンセル</button><button class="btn primary" data-act="saveMeet" data-id="${id||''}">保存</button>`);
+}
+function addRule(base, rule, i){
+  const d = parseYmd(base);
+  if(rule === 'w1') d.setDate(d.getDate()+7*i);
+  else if(rule === 'w2') d.setDate(d.getDate()+14*i);
+  else if(rule === 'm'){
+    const nth = Math.ceil(d.getDate()/7), dow = d.getDay();
+    const t = new Date(d.getFullYear(), d.getMonth()+i, 1);
+    let day = 1 + (dow - t.getDay() + 7) % 7 + (nth-1)*7;
+    const dim = new Date(t.getFullYear(), t.getMonth()+1, 0).getDate();
+    if(day > dim) day -= 7;
+    return ymd(new Date(t.getFullYear(), t.getMonth(), day));
+  }
+  return ymd(d);
+}
+
+function editMinutes(id, meetId){
+  const mn = id ? S.data.minutes.find(x => x.id === id) : null;
+  let d;
+  if(mn) d = mn;
+  else{
+    const mt = meetId ? S.data.meetings.find(x => x.id === meetId) : [...S.data.meetings].filter(x => x.date <= today() && !x.cancelled).sort(sortMeet).pop();
+    d = {meetingId: mt?mt.id:'', date: mt?mt.date:today(), title: mt?`${mt.title||'AI・DX定例会'} ${fmtDate(mt.date,true).replace(/（.）/,'')} 議事録`:'AI・DX定例会 議事録',
+      attendees: mt ? attendeesOf(mt) : [],
+      body: mt && mt.agenda ? `■ 議題\n${mt.agenda}\n\n■ 報告・議論内容\n\n` : '■ 議題\n1. \n\n■ 報告・議論内容\n\n', decisions:'', todos:[]};
+  }
+  const memList = allMembersSorted().filter(m => m.active !== false || d.attendees.includes(m.id));
+  const body = `<div class="frow2"><div class="f"><label>対象の定例会</label><select class="inp" id="n_meet" data-chg="minMeet">${meetOptions(d.meetingId)}</select></div>
+    <div class="f"><label>日付</label><input type="date" class="inp" id="n_date" value="${esc(d.date||'')}"></div></div>
+    <div class="f"><label>タイトル</label><input class="inp" id="n_title" value="${esc(d.title||'')}"></div>
+    <div class="f"><label>出席者</label><div class="checks" id="n_att">${memList.map(m => `<label><input type="checkbox" value="${m.id}" ${d.attendees.includes(m.id)?'checked':''}>${esc(m.name)}</label>`).join('')}</div></div>
+    <div class="f"><label>議事内容</label><textarea class="inp" id="n_body" rows="10">${esc(d.body||'')}</textarea></div>
+    <div class="f"><label>決定事項</label><textarea class="inp" id="n_dec" rows="4" placeholder="・〇〇を導入する">${esc(d.decisions||'')}</textarea></div>
+    <div class="f"><label>ToDo（担当・期限）</label><div id="n_todos">${(d.todos||[]).map(todoRow).join('')}</div><div><button class="btn sm" data-act="todoAdd">＋ ToDoを追加</button></div></div>`;
+  openModal(mn?'議事録を編集':'議事録を作成', body, `<button class="btn" data-act="closeModal">キャンセル</button><button class="btn primary" data-act="saveMin" data-id="${id||''}">保存</button>`, true);
+}
+function todoRow(td){
+  td = td || {id:uid(), text:'', owner:'', due:'', done:false};
+  return `<div class="todo-row" data-id="${td.id}" data-done="${td.done?1:0}"><input class="inp tx" placeholder="内容" value="${esc(td.text)}">
+    <select class="inp ow"><option value="">担当者</option>${allMembersSorted().filter(m => m.active!==false || m.id===td.owner).map(m => `<option value="${m.id}" ${m.id===td.owner?'selected':''}>${esc(m.name)}</option>`).join('')}</select>
+    <input type="date" class="inp du" value="${esc(td.due||'')}"><button class="btn sm ghost" data-act="todoDel" title="削除">×</button></div>`;
+}
+function minText(mn){
+  const mt = S.data.meetings.find(x => x.id === mn.meetingId);
+  const L = [];
+  L.push(`【議事録】${mn.title||''}`);
+  L.push(`日時：${fmtDate(minDate(mn))}${mt?' '+fmtTime(mt):''}`);
+  if(mt && mt.place) L.push(`場所：${mt.place}`);
+  L.push(`出席者：${mn.attendees.map(mName).join('、')||'—'}`);
+  L.push(`作成：${mName(mn.author)}`);
+  L.push('', '■ 議事内容', mn.body||'—', '', '■ 決定事項', mn.decisions||'なし', '', '■ ToDo');
+  if((mn.todos||[]).length) mn.todos.forEach(t => L.push(`・${t.text}（担当：${t.owner?mName(t.owner):'—'}／期限：${t.due?fmtDate(t.due,true):'—'}）${t.done?'［完了］':''}`));
+  else L.push('なし');
+  return L.join('\n');
+}
+async function copyText(t){
+  try{ await navigator.clipboard.writeText(t); }
+  catch(e){ const ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+  toast('クリップボードにコピーしました（メール等に貼り付けできます）');
+}
+function printMinutes(mn){
+  const mt = S.data.meetings.find(x => x.id === mn.meetingId);
+  const todoRows = (mn.todos||[]).map(t => `<tr><td>${esc(t.text)}</td><td>${esc(t.owner?mName(t.owner):'')}</td><td>${t.due?fmtDate(t.due):''}</td><td>${t.done?'完了':''}</td></tr>`).join('');
+  const w = window.open('', '_blank');
+  if(!w){ toast('ポップアップがブロックされました','err'); return; }
+  w.document.write(`<!doctype html><html lang="ja"><head><meta charset="utf-8"><title>${esc(mn.title)}</title><style>
+    body{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-size:11pt;color:#111;margin:18mm 16mm;line-height:1.6}
+    h1{font-size:16pt;border-bottom:2px solid #1d4f91;padding-bottom:4px;margin:0 0 10px}
+    table{border-collapse:collapse;width:100%;margin-bottom:10px}th,td{border:1px solid #999;padding:4px 8px;text-align:left;vertical-align:top}
+    th{background:#eef2f8;width:90px;font-weight:600}h2{font-size:12pt;margin:14px 0 4px;color:#1d4f91}.pre{white-space:pre-wrap;border:1px solid #ccc;padding:8px 10px;min-height:30px}
+    @page{size:A4;margin:0}</style></head><body>
+    <h1>${esc(mn.title)}</h1>
+    <table><tr><th>日時</th><td>${fmtDate(minDate(mn))} ${mt?esc(fmtTime(mt)):''}</td></tr>${mt&&mt.place?`<tr><th>場所</th><td>${esc(mt.place)}</td></tr>`:''}
+    <tr><th>出席者</th><td>${esc(mn.attendees.map(mName).join('、'))}</td></tr><tr><th>作成者</th><td>${esc(mName(mn.author))}</td></tr></table>
+    <h2>議事内容</h2><div class="pre">${esc(mn.body||'')}</div>
+    <h2>決定事項</h2><div class="pre">${esc(mn.decisions||'なし')}</div>
+    <h2>ToDo</h2>${todoRows?`<table><tr><th style="width:auto">内容</th><th>担当</th><th>期限</th><th style="width:50px">状態</th></tr>${todoRows}</table>`:'<div class="pre">なし</div>'}
+    <script>window.onload=()=>{window.print()}<\/script></body></html>`);
+  w.document.close();
+}
+
+/* ---------- files ---------- */
+function bindDrop(){
+  const pz = $('#dropPriv');
+  if(pz){
+    pz.addEventListener('dragover', e => { e.preventDefault(); pz.classList.add('over'); });
+    pz.addEventListener('dragleave', () => pz.classList.remove('over'));
+    pz.addEventListener('drop', e => { e.preventDefault(); pz.classList.remove('over'); if(e.dataTransfer.files.length){ setPrivPending(); uploadFiles(e.dataTransfer.files); } });
+  }
+  const dz = $('#drop'); if(!dz) return;
+  dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('over'); });
+  dz.addEventListener('dragleave', () => dz.classList.remove('over'));
+  dz.addEventListener('drop', e => { e.preventDefault(); dz.classList.remove('over'); if(e.dataTransfer.files.length){ if(DOC[S.view]) setDocPending(S.view); uploadFiles(e.dataTransfer.files); } });
+}
+function readAsDataURL(f){ return new Promise((res,rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = () => rej(r.error); r.readAsDataURL(f); }); }
+async function uploadFiles(list){
+  if(!S.me){ askMe(); return; }
+  const pPriv = !!S.pendPriv; S.pendPriv = false; const cat = S.pendCat || S.upCat, meet = S.pendCat ? S.pendMeet : S.upMeet; S.pendCat = null; S.pendMeet = null;
+  if(!FILE_CATS.includes(S.upCat)) S.upCat = '会議資料';
+  let ok = 0; const minRecs = [], agRecs = [];
+  const max = isRemote() ? REMOTE_FILE_MAX : LOCAL_FILE_MAX;
+  const items = [];
+  for(const f of list){
+    if(f.size > max){ toast(`${f.name} は大きすぎます（上限 ${fmtSize(max)}）`, 'err'); continue; }
+    const rec = {id:uid(), name:f.name, mime:f.type||'', size:f.size, ...refFields(meet), category:cat, uploader:S.me, createdAt:nowISO(), note:'', url:'', private:pPriv};
+    items.push({f, rec});
+  }
+  if(!items.length) return;
+  // 先に「アップロード中」の行を表示し、複数ファイルは同時に送る
+  S.uploading = S.uploading || [];
+  items.forEach(({rec}) => S.uploading.push({id:rec.id, name:rec.name, category:cat, private:pPriv, uploader:S.me, size:rec.size}));
+  render();
+  if(isRemote()) toast(`アップロード中：${items.length}件`);
+  const saves = [];
+  await Promise.all(items.map(async ({f, rec}) => {
+    try{
+      const dataUrl = await readAsDataURL(f);
+      if(isRemote()){
+        const j = await api({action:'upload', name:f.name, mime:f.type||'application/octet-stream', base64:String(dataUrl).split(',')[1]});
+        rec.url = j.file.url; rec.driveId = j.file.driveId;
+      }else rec.dataUrl = dataUrl;
+      const p = saveRec('files', rec);            // 画面用のデータは即時に反映（サーバー保存は並行）
+      S.uploading = S.uploading.filter(x => x.id !== rec.id);
+      render(); if(S.openMeet && modalOpen()) showMeeting(S.openMeet);
+      await p; ok++; if(rec.category === '議事録') minRecs.push(rec); if(rec.category === '議事次第' && !rec.private) agRecs.push(rec);
+    }catch(e){
+      S.uploading = S.uploading.filter(x => x.id !== rec.id);
+      S.data.files = S.data.files.filter(x => x.id !== rec.id);
+      render(); toast(`${f.name} のアップロードに失敗：${e.message}`, 'err');
+    }
+  }));
+  if(ok) toast(cat === '議事録' || cat === '議事次第' ? `${cat}を${ok}件登録しました` : `${ok}件の資料を保存しました`);
+  if(minRecs.length){
+    const mt = S.data.meetings.find(x => x.id === minRecs[0].meetingId);
+    postNotice(`【議事録アップ】${mt ? mt.title + '（' + fmtDate(mt.date) + '）' : '定例会'}の議事録がアップされました。\nファイル：${minRecs.map(r => r.name).join('、')}\n「議事録」タブから確認できます。`).then(() => render());
+  }
+  if(agRecs.length){
+    const r0 = agRecs[0], mt = S.data.meetings.find(x => x.id === r0.meetingId), pl = S.data.polls.find(x => x.id === r0.pollId);
+    const where = mt ? `${mt.title}（${meetWhen(mt)}）` : pl ? `${pl.title}（日程調整中）` : '定例会';
+    postNotice(`【議事次第アップ】${where}の議事次第がアップされました。\nファイル：${agRecs.map(r => r.name).join('、')}\n「議事次第」タブから確認できます。`).then(() => render());
+  }
+  render();
+  if(S.openMeet && modalOpen()) showMeeting(S.openMeet);
+}
+async function openFile(f){
+  if(f.url){ window.open(f.url, '_blank', 'noopener'); return; }
+  if(f.dataUrl){
+    const blob = await (await fetch(f.dataUrl)).blob();
+    const u = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = u;
+    if(/^(application\/pdf|image\/|text\/)/.test(f.mime)) a.target = '_blank'; else a.download = f.name;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 60000);
+  }
+}
+
+async function downloadFile(f){
+  if(f.driveId){ window.open('https://drive.google.com/uc?export=download&id=' + encodeURIComponent(f.driveId), '_blank', 'noopener'); return; }
+  if(f.dataUrl){
+    const blob = await (await fetch(f.dataUrl)).blob();
+    const u = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = u; a.download = f.name;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 60000);
+    return;
+  }
+  if(f.url) window.open(f.url, '_blank', 'noopener');
+}
+
+/* ---------- me ---------- */
+function askMe(){
+  openModal('あなたは誰ですか？', `<div class="small muted" style="margin-bottom:12px">投稿者や出欠に使います。この端末に記憶され、あとで「設定」から変更できます。</div>
+    <div class="pick">${activeMembers().map(m => `<button data-act="setMeBtn" data-id="${m.id}">${avatar(m.id,34)}<b>${esc(m.name)}</b></button>`).join('')}</div>`);
+}
+
+/* ---------- actions ---------- */
+const ACT = {
+  wtPeriod: el => { const p = Number(el.dataset.p); if(p >= WT_FIRST){ S.wtPeriod = p; render(); window.scrollTo(0,0); } },
+  wtUnit: el => { S.wtUnit = el.dataset.u; render(); },
+  wtItemDel: async el => { const p = S.wtPeriod, rec = wtEnsure(p, el.dataset.m); rec.items.splice(Number(el.dataset.k), 1); await saveRec('worktime', rec); render(); },
+  nav: el => { S.view = el.dataset.v; closeModal(); render(); window.scrollTo(0,0); },
+  sync: async () => { await loadData(); render(); if(!S.error) toast(isRemote()?'最新の状態に更新しました':'ローカルデータを再読み込みしました'); },
+  closeModal: () => closeModal(),
+  ovClose: (el,e) => { if(e.target === el) closeModal(); },
+  setMeBtn: el => { S.pollFor = ''; S.me = el.dataset.id; lsSet(LSK.me, S.me); closeModal(); render(); toast(`${mName(S.me)}さんとして利用します`); },
+  calMove: el => { const d = Number(el.dataset.d); if(d === 0){ const n = new Date(); S.calY = n.getFullYear(); S.calM = n.getMonth(); } else { const n = new Date(S.calY, S.calM+d, 1); S.calY = n.getFullYear(); S.calM = n.getMonth(); } render(); },
+  togglePast: () => { S.showPast = !S.showPast; render(); },
+  newMeet: el => editMeeting(null, el.dataset.date),
+  showMeet: el => { if(el.dataset.id) showMeeting(el.dataset.id); else closeModal(); },
+  editMeet: el => editMeeting(el.dataset.id),
+  saveMeet: async el => {
+    const id = el.dataset.id;
+    const date = val('f_date'); if(!date){ toast('日付を入力してください','err'); return; }
+    const base = {title: val('f_title').trim()||'AI・DX定例会', date, start:val('f_start'), end:val('f_end'), place:val('f_place').trim(), agenda:val('f_agenda')};
+    el.disabled = true;
+    try{
+      if(id){
+        const mt = S.data.meetings.find(x => x.id === id);
+        Object.assign(mt, base, {cancelled:false});
+        await saveRec('meetings', mt); showMeeting(id);
+      }else{
+        const cnt = 1;
+        const items = [];
+        for(let i=0; i<cnt; i++) items.push({table:'meetings', record:{id:uid()+i, ...base, date, attendance:{}, cancelled:false, createdBy:S.me, createdAt:nowISO(), updatedBy:S.me}});
+        const bad = items.filter(it => { const c = coInfo(it.record.date); return c && c.hol; }).map(it => fmtDate(it.record.date));
+        if(bad.length && !confirm(`会社の休日に当たる日が含まれています：\n${bad.join('、')}\n\nこのまま登録しますか？`)){ el.disabled = false; return; }
+        await saveMany(items); closeModal();
+        { const r0 = items[0].record; await postNotice(`【日程決定】${r0.title}の日程が決まりました。\n日時：${meetWhen(r0)}${r0.place?'\n場所：'+r0.place:''}\n全員出席の予定です（欠席・未定の場合のみ、スケジュールの定例会の詳細から変更できます）。`); }
+        toast('定例会を登録しました。全員にメッセージで通知しました');
+      }
+      render();
+    }catch(e){ el.disabled = false; toast('保存に失敗しました：'+e.message,'err'); }
+  },
+  delMeet: async el => {
+    const mt = S.data.meetings.find(x => x.id === el.dataset.id);
+    if(!confirm(`${meetLabel(mt)} を削除しますか？\n（議事録・資料は削除されません）`)) return;
+    await delRec('meetings', mt.id); closeModal(); render(); toast('削除しました');
+  },
+  att: async el => {
+    if(!S.me){ askMe(); return; }
+    const mt = S.data.meetings.find(x => x.id === el.dataset.meet); if(!mt) return;
+    const a = {...(mt.attendance||{})}; const v = el.dataset.v, mem = el.dataset.mem;
+    if(v === 'yes') delete a[mem]; else a[mem] = v;
+    mt.attendance = a;
+    try{ await saveRec('meetings', mt); }catch(e){}
+    if(S.openMeet === mt.id) showMeeting(mt.id);
+    render();
+  },
+  askMe: () => askMe(),
+  openPoll: el => { S.pollFor = ''; S.view = 'poll'; S.selPoll = el.dataset.id; closeModal(); render(); window.scrollTo(0,0); },
+  pollBack: () => { S.selPoll = null; render(); },
+  editPoll: el => { S.redoNext = false; ACT.newPoll(el); },
+  redoPoll: el => { if(!S.me){ askMe(); return; } S.redoNext = true; ACT.newPoll(el); },
+  newPoll: el => {
+    if(!S.me){ askMe(); return; }
+    const P = el && el.dataset && el.dataset.id ? S.data.polls.find(x => x.id === el.dataset.id) : null;
+    const redo = !!(S.redoNext && P); S.redoNext = false; S.redoId = redo ? P.id : '';
+    const last = [...S.data.meetings].sort(sortMeet).pop();
+    S.draftSlots = P && !redo ? P.slots.map(s => ({...s})) : []; S.draftDur = P ? (P.duration||0) : 0;
+    const d0 = new Date(), d1 = new Date();
+    const st = last&&last.start ? last.start : '15:00', en = last&&last.end ? last.end : '16:00';
+    const ld = last&&last.start&&last.end ? toMin(last.end)-toMin(last.start) : 60; const dur0 = P && [30,60,90,120,150,180,240].includes(P.duration) ? P.duration : ([30,60,90,120,150,180,240].includes(ld) ? ld : 60);
+    openModal(redo ? `日程を再調整（${(P.reCount||0)+1}回目）` : P ? '日程調整を編集' : '日程調整を作成', `${redo?`<div class="banner" style="margin:0 0 12px"><span>候補日時と各メンバーの回答をリセットして、候補日の設定からやり直します。<b>会議名・場所・議題・議事次第・資料はそのまま引き継ぎます。</b></span></div>`:''}<div class="f"><label>開催回</label><div class="inline" style="gap:6px"><span>第</span><input type="number" min="1" step="1" inputmode="numeric" class="inp" id="p_round" style="width:90px" placeholder="例：6" value="${P ? (P.round || roundOf(P.title) || '') : nextRound()}"><span>回 AI・DX定例会</span></div></div>
+      <div class="frow2"><div class="f"><label>場所・Web会議URL</label><input class="inp" id="p_place" value="${esc(P ? P.place||'' : (last?last.place||'':''))}"></div><div class="f"><label>回答期限（任意）</label><input type="date" class="inp" id="p_dead" value="${esc(P ? P.deadline||'' : '')}"></div></div>
+      <div class="f"><label>議題（任意）</label><textarea class="inp" id="p_agenda" rows="2">${esc(P ? P.agenda||'' : '')}</textarea></div>
+      <div class="box" style="margin-bottom:12px"><b style="font-size:13px">候補日時をまとめて作る</b>
+        <div class="frow" style="margin-top:8px"><div class="f"><label>期間（開始）</label><input type="date" class="inp" id="g_from" value="${ymd(d0)}"></div><div class="f"><label>期間（終了）</label><input type="date" class="inp" id="g_to" value="${ymd(d1)}"></div><div></div></div>
+        <div class="frow"><div class="f"><label>会議予定時間</label><select class="inp" id="g_dur">${[30,60,90,120,150,180,240].map(m => `<option value="${m}" ${m===dur0?'selected':''}>${durLabel(m)}</option>`).join('')}</select></div>
+        <div class="f"><label>候補の時間帯：最も早い開始</label><input type="time" class="inp" id="g_start" value="09:00"></div><div class="f"><label>候補の時間帯：最も遅い終了</label><input type="time" class="inp" id="g_end" value="18:00"></div></div>
+        <div class="small muted" style="margin:-4px 0 10px">開始は毎時00分で、1時間ずつずらして候補を作ります。終了時刻は会議の終了時刻です。<br>例：13:00〜17:00・2時間 → 13:00〜15:00 ／ 14:00〜16:00 ／ 15:00〜17:00</div>
+        <div class="f"><label>曜日</label><div class="checks" id="g_wd">${[1,2,3,4,5,6,0].map(i => `<label><input type="checkbox" value="${i}" ${i>=1&&i<=5?'checked':''}>${WD[i]}</label>`).join('')}</div></div>
+        <div class="checks" style="margin-bottom:8px"><label><input type="checkbox" id="g_exh" checked>会社の休日を除く</label><label><input type="checkbox" id="g_exe">工程会議・売上報告会の日を除く</label></div>
+        <button class="btn sm" data-act="genSlots">候補を追加</button></div>
+      <div class="box" style="margin-bottom:12px"><b style="font-size:13px">1件ずつ追加</b>
+        <div class="inline" style="margin-top:8px"><input type="date" class="inp" id="a_date" style="width:auto" value="${ymd(d0)}"><input type="time" class="inp" id="a_start" style="width:auto" value="${esc(st)}"><span>〜</span><input type="time" class="inp" id="a_end" style="width:auto" value="${esc(en)}"><button class="btn sm" data-act="addSlot">追加</button></div></div>
+      <div class="f"><label>候補日時</label><div id="p_slots">${slotChips()}</div></div>${redo?`<div class="f"><label>再調整の理由（任意・お知らせに記載）</label><input class="inp" id="rs_reason2" placeholder="例：全員の都合が合わなかったため"></div><label class="small inline" style="gap:6px;cursor:pointer"><input type="checkbox" id="rs_notify2" checked>メッセージで全員に知らせる</label>`:''}`,
+      `<button class="btn" data-act="closeModal">キャンセル</button><button class="btn primary" data-act="savePoll" data-id="${P?P.id:''}">${redo?'再調整を開始する':P?'保存する':'作成する'}</button>`, true);
+  },
+  genSlots: () => {
+    const from = val('g_from'), to = val('g_to'); if(!from || !to || from > to){ toast('期間を正しく入力してください','err'); return; }
+    const dur = Number(val('g_dur')), w0 = toMin(val('g_start')), w1 = toMin(val('g_end'));
+    if(!dur || isNaN(w0) || isNaN(w1) || w1 <= w0){ toast('時間帯を正しく入力してください','err'); return; }
+    const times = []; for(let t = Math.ceil(w0/60)*60; t + dur <= w1; t += 60) times.push([t, t+dur]);
+    if(!times.length){ toast('この時間帯には会議予定時間が収まりません','err'); return; }
+    const wds = [...document.querySelectorAll('#g_wd input:checked')].map(i => Number(i.value));
+    const exh = $('#g_exh').checked, exe = $('#g_exe').checked;
+    let add = 0;
+    for(let d = parseYmd(from); ymd(d) <= to; d.setDate(d.getDate()+1)){
+      if(!wds.includes(d.getDay())) continue; const ds = ymd(d); const c = coInfo(ds);
+      if(c && ((exh && c.hol) || (exe && (c.kou || c.uri)))) continue;
+      times.forEach(([s,e]) => {
+        const st = fmtMin(s); if(S.draftSlots.some(x => x.date === ds && x.start === st)) return;
+        S.draftSlots.push({id:uid()+add, date:ds, start:st, end:fmtMin(e)}); add++;
+      });
+    }
+    S.draftDur = dur;
+    if(S.draftSlots.length > 100){ S.draftSlots.length = 100; toast('候補は100件までです。期間や時間帯を絞ってください','err'); }
+    $('#p_slots').innerHTML = slotChips(); toast(add ? `${add}件の候補を追加しました` : '追加できる候補がありませんでした');
+  },
+  addSlot: () => {
+    const ds = val('a_date'); if(!ds){ toast('日付を入力してください','err'); return; }
+    const st = val('a_start'), en = val('a_end');
+    if(S.draftSlots.some(s => s.date === ds && s.start === st)) return;
+    S.draftSlots.push({id:uid(), date:ds, start:st, end:en}); $('#p_slots').innerHTML = slotChips();
+  },
+  clearSlots: () => { if(S.draftSlots.length && !confirm(`候補${S.draftSlots.length}件をすべて削除しますか？`)) return; S.draftSlots = []; $('#p_slots').innerHTML = slotChips(); },
+  rmDate: el => { S.draftSlots = S.draftSlots.filter(s => s.date !== el.dataset.date); $('#p_slots').innerHTML = slotChips(); },
+  rmSlot: el => { S.draftSlots = S.draftSlots.filter(s => s.id !== el.dataset.id); $('#p_slots').innerHTML = slotChips(); },
+  savePoll: async el => {
+    const round = Math.floor(Number(val('p_round'))); if(!round || round < 1){ toast('開催回（数字）を入力してください','err'); return; }
+    const title = `第${round}回 AI・DX定例会`;
+    if(!S.draftSlots.length){ toast('候補日時を1件以上登録してください','err'); return; }
+    if(el.dataset.id){
+      const p = S.data.polls.find(x => x.id === el.dataset.id); if(!p) return;
+      if(S.redoId === p.id){
+        S.redoId = '';
+        const reason = val('rs_reason2').trim(), notify = $('#rs_notify2') && $('#rs_notify2').checked;
+        el.disabled = true;
+        try{
+          for(const a of S.data.answers.filter(x => x.pollId === p.id)) await delRec('answers', a.id);
+          Object.assign(p, {title, round, place:val('p_place').trim(), agenda:val('p_agenda'), deadline:val('p_dead'), slots:[...S.draftSlots], duration:S.draftDur || p.duration || 0, prevSlot:'', reCount:(p.reCount||0)+1});
+          await saveRec('polls', p);
+          Object.keys(S.pollDraft).filter(k => k.startsWith(p.id + '_')).forEach(k => delete S.pollDraft[k]);
+          if(notify) await postNotice(`【日程再調整（${p.reCount}回目）】${p.title}の候補日を設定し直しました。\n${reason?'理由：'+reason+'\n':''}「日程調整」の画面から、あらためて回答をお願いします。`);
+          closeModal(); S.view = 'poll'; S.selPoll = p.id; render(); toast(`日程を再調整します（${p.reCount}回目）。メンバーに回答を依頼してください`);
+        }catch(e){ el.disabled = false; }
+        return;
+      }
+      const oldIds = new Set(p.slots.map(s => s.id)); const added = S.draftSlots.filter(s => !oldIds.has(s.id)).length;
+      const subs = S.data.answers.filter(a => a.pollId === p.id && a.submitted);
+      if(added && subs.length && !confirm(`候補を${added}件追加すると、回答済みの${subs.length}名は「未回答」に戻り、再回答が必要になります（これまでの×・△の入力は残ります）。\n\nこの内容で保存しますか？`)) return;
+      Object.assign(p, {title, round, place:val('p_place').trim(), agenda:val('p_agenda'), deadline:val('p_dead'), slots:[...S.draftSlots], duration:S.draftDur || p.duration || 0});
+      el.disabled = true;
+      try{
+        await saveRec('polls', p);
+        if(added) for(const a of subs){ a.submitted = false; await saveRec('answers', a); }
+        Object.keys(S.pollDraft).filter(k => k.startsWith(p.id + '_')).forEach(k => delete S.pollDraft[k]);
+        closeModal(); render(); toast('日程調整を更新しました' + (added && subs.length ? '。回答済みの人に再回答をお願いしてください' : ''));
+      }catch(e){ el.disabled = false; }
+      return;
+    }
+    const rec = {id:uid(), title, round, place:val('p_place').trim(), agenda:val('p_agenda'), deadline:val('p_dead'), slots:[...S.draftSlots], duration:S.draftDur||0, status:'open', confirmedSlot:'', meetingId:'', createdBy:S.me, createdAt:nowISO()};
+    el.disabled = true;
+    try{
+      await saveRec('polls', rec);
+      const shown = rec.slots.slice(0, 8).map(sl => '・' + slotLabel(sl)).join('\n') + (rec.slots.length > 8 ? `\n・ほか${rec.slots.length - 8}件` : '');
+      await postNotice(`【日程調整】${rec.title}の候補日が出ました。\n候補日：\n${shown}${rec.place ? '\n場所：' + rec.place : ''}${rec.deadline ? '\n回答期限：' + fmtDate(rec.deadline, true) : ''}\n「日程調整」の画面から、回答をお願いします。`);
+      closeModal(); S.view = 'poll'; S.selPoll = rec.id; render(); toast('日程調整を作成し、メンバーへ自動通知しました');
+    }
+    catch(e){ el.disabled = false; toast('作成に失敗しました。GASを最新版に更新（新バージョンでデプロイ）してあるか確認してください','err'); }
+  },
+  pmark: el => {
+    const p = S.data.polls.find(x => x.id === el.dataset.poll); const d = getDraft(p);
+    if(el.dataset.v === 'o') delete d.marks[el.dataset.slot]; else d.marks[el.dataset.slot] = el.dataset.v;
+    d.dirty = true; render();
+  },
+  pday: el => {
+    const p = S.data.polls.find(x => x.id === el.dataset.poll); const d = getDraft(p);
+    p.slots.filter(s => s.date === el.dataset.date).forEach(s => { if(el.dataset.v === 'o') delete d.marks[s.id]; else d.marks[s.id] = el.dataset.v; });
+    d.dirty = true; render();
+  },
+  psubmit: async el => {
+    if(!S.me){ askMe(); return; }
+    const p = S.data.polls.find(x => x.id === el.dataset.poll); const d = getDraft(p);
+    const valid = new Set(p.slots.map(s => s.id)); Object.keys(d.marks).forEach(k => { if(!valid.has(k)) delete d.marks[k]; });
+    const tg = ansTarget(), old = targetAnswer(p);
+    const rec = {...(old||{}), id:`${p.id}_${tg}`, pollId:p.id, memberId:tg, marks:{...d.marks}, comment:d.comment||'', submitted:true, proxyBy:(tg !== S.me ? S.me : '')};
+    // 画面には先に反映し、サーバー保存は裏で行う
+    el.disabled = true;
+    const pr = saveRec('answers', rec);
+    d.dirty = false; render(); toast(tg !== S.me ? `${mName(tg)}さんの回答を送信しました（代理）` : '回答を送信しました');
+    try{ await pr; }
+    catch(e){ toast('送信に失敗しました。通信状況を確認して、もう一度送信してください','err'); await loadData(true); d.dirty = true; render(); }
+  },
+  pallok: async el => { const p = S.data.polls.find(x => x.id === el.dataset.poll); getDraft(p).marks = {}; await ACT.psubmit(el); },
+  confirmSlot: async el => {
+    const p = S.data.polls.find(x => x.id === el.dataset.poll); const r = pollTally(p).find(x => x.slot.id === el.dataset.slot); const s = r.slot;
+    const by = ansByMem(p); const un = activeMembers().filter(m => !(by[m.id] && by[m.id].submitted));
+    const msg = `${fmtDate(s.date)} ${s.start||''}${s.end?'〜'+s.end:''} で確定しますか？\n\n` +
+      `出席不可（×）：${r.xs.length?r.xs.map(mName).join('、'):'なし'}\n△：${r.ts.length?r.ts.map(mName).join('、'):'なし'}\n` +
+      (un.length ? `未回答：${un.map(m => m.name).join('、')}\n` : '') + `\n確定すると定例会としてスケジュールに登録されます。`;
+    if(!confirm(msg)) return;
+    const att = {}; r.xs.forEach(id => att[id] = 'no'); r.ts.forEach(id => att[id] = 'maybe');
+    const mt = {id:uid(), title:p.title, date:s.date, start:s.start||'', end:s.end||'', place:p.place||'', agenda:p.agenda||'', attendance:att, cancelled:false, createdBy:S.me, createdAt:nowISO()};
+    try{
+      await saveRec('meetings', mt);
+      p.status = 'closed'; p.confirmedSlot = s.id; p.meetingId = mt.id; p.prevSlot = ''; await saveRec('polls', p);
+      for(const fl of S.data.files.filter(x => x.pollId === p.id)){ fl.meetingId = mt.id; fl.pollId = ''; await saveRec('files', fl); }
+      await postNotice(`【日程決定】${mt.title}の日程が決まりました。\n日時：${meetWhen(mt)}${mt.place?'\n場所：'+mt.place:''}\n全員出席の予定です（欠席・未定の場合のみ、スケジュールの定例会の詳細から変更できます）。`);
+      render(); toast('日程を確定し、スケジュールに登録しました。全員にメッセージで通知しました');
+    }catch(e){}
+  },
+  reschedule: el => {
+    const p = S.data.polls.find(x => x.id === el.dataset.id); if(!p) return;
+    const mt = S.data.meetings.find(x => x.id === p.meetingId);
+    openModal('日程を再調整する', `<div class="small" style="margin-bottom:8px">${mt?'次の定例会を取り消して、日程調整を再開します。':'日程調整を再開します（確定した定例会は見つかりません）。'}</div>
+      ${mt?`<div class="box" style="margin-bottom:10px"><b>${esc(mt.title)}</b>　${esc(fmtDate(mt.date))} ${esc(fmtTime(mt))}</div>`:''}
+      <ul class="small muted" style="padding-left:18px;margin:0 0 12px">
+        <li>各メンバーの回答（○△×）はそのまま残ります。</li>
+        ${mt?'<li>スケジュールから定例会が消えます（出欠の入力は失われます）。</li><li>紐づけた議事次第・資料は日程調整に戻り、再確定すると新しい定例会に引き継がれます。</li>':''}
+        <li>前回確定した日時には「前回確定（取消）」の印が付きます。</li></ul>
+      <div class="f"><label>再調整の理由（任意・お知らせに記載）</label><input class="inp" id="rs_reason" placeholder="例：〇〇さんの都合が悪くなったため"></div>
+      <label class="small inline" style="gap:6px;cursor:pointer"><input type="checkbox" id="rs_notify" checked>メッセージで全員に知らせる</label>`,
+      `<button class="btn" data-act="closeModal">キャンセル</button><button class="btn primary" data-act="doReschedule" data-id="${p.id}">再調整を始める</button>`);
+  },
+  doReschedule: async el => {
+    const p = S.data.polls.find(x => x.id === el.dataset.id); if(!p) return;
+    const mt = S.data.meetings.find(x => x.id === p.meetingId);
+    const reason = val('rs_reason').trim(), notify = $('#rs_notify').checked;
+    el.disabled = true;
+    try{
+      if(mt){
+        for(const fl of S.data.files.filter(x => x.meetingId === mt.id)){ fl.meetingId = ''; fl.pollId = p.id; await saveRec('files', fl); }
+        await delRec('meetings', mt.id);
+      }
+      p.status = 'open'; p.prevSlot = p.confirmedSlot || ''; p.confirmedSlot = ''; p.meetingId = ''; p.reCount = (p.reCount||0) + 1;
+      await saveRec('polls', p);
+      if(notify){
+        const when = mt ? `（${fmtDate(mt.date)} ${fmtTime(mt)}）` : '';
+        await postNotice(`【日程再調整】${p.title}${when}を取り消し、日程調整を再開しました。\n${reason?'理由：'+reason+'\n':''}「日程調整」の画面から、あらためて回答をお願いします。`);
+      }
+      closeModal(); S.view = 'poll'; S.selPoll = p.id; render(); toast('日程調整を再開しました');
+    }catch(e){ el.disabled = false; }
+  },
+  unconfirm: async el => {
+    const p = S.data.polls.find(x => x.id === el.dataset.id); if(!p) return;
+    const mt = S.data.meetings.find(x => x.id === p.meetingId);
+    if(!confirm(`確定を取り消して、確定ボタンを押す前の状態に戻します。\n\n・スケジュールから定例会${mt?'（'+fmtDate(mt.date)+' '+fmtTime(mt)+'）':''}が消えます（出欠の入力は失われます）\n・各メンバーの回答と候補日時は、そのまま残ります\n・議事次第・資料は日程調整に戻ります\n\nよろしいですか？`)) return;
+    el.disabled = true;
+    try{
+      if(mt){
+        for(const fl of S.data.files.filter(x => x.meetingId === mt.id)){ fl.meetingId = ''; fl.pollId = p.id; await saveRec('files', fl); }
+        await delRec('meetings', mt.id);
+      }
+      const when = mt ? `（${fmtDate(mt.date)} ${fmtTime(mt)}）` : '';
+      p.status = 'open'; p.confirmedSlot = ''; p.meetingId = ''; p.prevSlot = '';
+      await saveRec('polls', p);
+      await postNotice(`【日程確定を取り消し】${p.title}${when}の確定を取り消しました。日程は調整中に戻っています。\n「日程調整」の画面から、あらためて確認してください。`);
+      S.view = 'poll'; S.selPoll = p.id; render(); toast('確定を取り消しました。調整中に戻りました');
+    }catch(e){ el.disabled = false; }
+  },
+  reopenPoll: async el => {
+    if(!confirm('調整を再開しますか？\n（確定時に作成した定例会はスケジュールに残ります。不要な場合は定例会を削除してください）')) return;
+    const p = S.data.polls.find(x => x.id === el.dataset.id); p.status = 'open'; p.confirmedSlot = ''; p.meetingId = '';
+    await saveRec('polls', p); render();
+  },
+  delPoll: async el => {
+    const p = S.data.polls.find(x => x.id === el.dataset.id);
+    if(!confirm(`「${p.title} 日程調整」を削除しますか？\n（回答も削除されます。確定済みの定例会は残ります）`)) return;
+    for(const a of S.data.answers.filter(x => x.pollId === p.id)) await delRec('answers', a.id);
+    for(const fl of S.data.files.filter(x => x.pollId === p.id)){ fl.pollId = ''; await saveRec('files', fl); }
+    await delRec('polls', p.id); S.selPoll = null; render(); toast('削除しました');
+  },
+  newMin: el => editMinutes(null, el.dataset.meet || ''),
+  openMin: el => { S.view = 'minutes'; S.selMin = el.dataset.id; S.minQ = ''; closeModal(); render(); window.scrollTo(0,0); },
+  selMin: el => { S.selMin = el.dataset.id; render(); },
+  editMin: el => editMinutes(el.dataset.id),
+  todoAdd: () => { $('#n_todos').insertAdjacentHTML('beforeend', todoRow()); const r = $('#n_todos').lastElementChild; r.querySelector('.tx').focus(); },
+  todoDel: el => el.closest('.todo-row').remove(),
+  saveMin: async el => {
+    if(!S.me){ askMe(); return; }
+    const id = el.dataset.id;
+    const old = id ? S.data.minutes.find(x => x.id === id) : null;
+    const todos = [...document.querySelectorAll('#n_todos .todo-row')].map(r => ({id:r.dataset.id, text:r.querySelector('.tx').value.trim(), owner:r.querySelector('.ow').value, due:r.querySelector('.du').value, done:r.dataset.done==='1'})).filter(t => t.text);
+    const rec = {...(old||{id:uid(), author:S.me, createdAt:nowISO()}),
+      meetingId: val('n_meet'), date: val('n_date'), title: val('n_title').trim()||'議事録',
+      attendees: [...document.querySelectorAll('#n_att input:checked')].map(i => i.value),
+      body: val('n_body'), decisions: val('n_dec'), todos};
+    el.disabled = true;
+    try{ await saveRec('minutes', rec); closeModal(); S.view = 'minutes'; S.selMin = rec.id; render(); toast('議事録を保存しました'); }
+    catch(e){ el.disabled = false; }
+  },
+  delMin: async el => { if(!confirm('この議事録を削除しますか？')) return; await delRec('minutes', el.dataset.id); S.selMin = null; render(); toast('削除しました'); },
+  copyMin: el => copyText(minText(S.data.minutes.find(x => x.id === el.dataset.id))),
+  printMin: el => printMinutes(S.data.minutes.find(x => x.id === el.dataset.id)),
+  todoToggle: async el => {
+    const mn = S.data.minutes.find(x => x.id === el.dataset.min); if(!mn) return;
+    const td = mn.todos.find(x => x.id === el.dataset.todo); if(!td) return;
+    td.done = el.checked; td.doneBy = S.me; td.doneAt = el.checked ? nowISO() : '';
+    try{ await saveRec('minutes', mn); }catch(e){}
+    render();
+  },
+  pickPriv: () => { if(!S.me){ askMe(); return; } setPrivPending(); $('#fileInput').click(); },
+  pickFile: () => { if(!S.me){ askMe(); return; } S.pendCat = null; $('#fileInput').click(); },
+  pickDoc: el => { if(!S.me){ askMe(); return; } setDocPending(el.dataset.view); $('#fileInput').click(); },
+  upFor: el => { if(!S.me){ askMe(); return; } S.pendCat = null; S.upMeet = el.dataset.ref || el.dataset.id; S.upCat = el.dataset.cat; $('#fileInput').click(); },
+  filesForMeet: el => { S.view = 'files'; S.upMeet = el.dataset.id; S.fileMeet = el.dataset.id; closeModal(); render(); },
+  linkFile: () => {
+    if(!S.me){ askMe(); return; }
+    openModal('リンクを登録', `<div class="f"><label>表示名</label><input class="inp" id="l_name" placeholder="例：第5回 説明資料（共有フォルダ）"></div>
+      <div class="f"><label>URL・ファイルの場所</label><input class="inp" id="l_url" placeholder="https://… または \\\\server\\共有\\…"></div>
+      <div class="frow2"><div class="f"><label>定例会</label><select class="inp" id="l_meet">${meetOptions(S.upMeet)}</select></div>
+      <div class="f"><label>分類</label><select class="inp" id="l_cat">${FILE_CATS.map(c => `<option ${c===S.upCat?'selected':''}>${c}</option>`).join('')}</select></div></div>
+      <div class="f"><label>公開範囲</label><select class="inp" id="l_priv"><option value="">全員に共有</option><option value="1">🔒 自分だけ（個人用）</option></select></div>
+      <div class="f"><label>メモ</label><input class="inp" id="l_note"></div>`,
+      `<button class="btn" data-act="closeModal">キャンセル</button><button class="btn primary" data-act="saveLink">登録</button>`);
+  },
+  saveLink: async () => {
+    const name = val('l_name').trim(), url = val('l_url').trim();
+    if(!name || !url){ toast('表示名とURLを入力してください','err'); return; }
+    const u = /^(https?:|file:)/i.test(url) ? url : (url.startsWith('\\\\') ? 'file:' + url.replace(/\\/g,'/') : url);
+    await saveRec('files', {id:uid(), name, url:u, isLink:true, mime:'', size:0, ...refFields(val('l_meet')), category:val('l_cat'), note:val('l_note').trim(), uploader:S.me, createdAt:nowISO(), private:!!val('l_priv')});
+    closeModal(); render(); toast('リンクを登録しました');
+  },
+  dlFile: el => { const f = S.data.files.find(x => x.id === el.dataset.id); if(f) downloadFile(f); },
+  openFile: (el,e) => { e.preventDefault(); const f = S.data.files.find(x => x.id === el.dataset.id); if(f) openFile(f); },
+  delFile: async el => {
+    const f = S.data.files.find(x => x.id === el.dataset.id);
+    if(!confirm(`「${f.name}」を削除しますか？${f.driveId?'\n（ドライブ上のファイルはゴミ箱へ移動します）':''}`)) return;
+    if(f.driveId && isRemote()) api({action:'trash', driveId:f.driveId}).catch(() => {});
+    await delRec('files', f.id); render(); toast('削除しました');
+  },
+  mention: el => { const mi = $('#msgInput'); if(!mi) return; mi.value += (mi.value && !/\s$/.test(mi.value) ? ' ' : '') + '@' + el.dataset.name + ' '; mi.focus(); },
+  sendMsg: async () => {
+    if(!S.me){ askMe(); return; }
+    const mi = $('#msgInput'); const text = mi.value.trim(); if(!text) return;
+    const to = S.msgToAll ? [] : S.msgToIds.filter(id => id !== S.me);
+    if(!S.msgToAll && !to.length){ toast('宛先を選択してください（全員に送る場合は「全員」にチェック）','err'); return; }
+    mi.value = '';
+    try{ await saveRec('messages', {id:uid(), author:S.me, text, to, createdAt:nowISO(), pinned:false}); S.msgToAll = true; S.msgToIds = []; }
+    catch(e){ mi.value = text; }
+    render();
+  },
+  pinMsg: async el => { const m = S.data.messages.find(x => x.id === el.dataset.id); m.pinned = !m.pinned; await saveRec('messages', m); render(); },
+  delMsg: async el => { if(!confirm('このメッセージを削除しますか？')) return; await delRec('messages', el.dataset.id); render(); },
+  testMail: async el => {
+    const m = mById(el.dataset.id); if(!m) return;
+    const inp = el.parentElement.querySelector('input'); const v = (inp ? inp.value : m.email || '').trim();
+    if(!v){ toast('メールアドレスを入力してください','err'); return; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){ toast('メールアドレスの形式が正しくありません','err'); return; }
+    if(!isRemote()){ toast('メールは共有モード（GAS接続時）でのみ送れます','err'); return; }
+    if((m.email||'') !== v){ m.email = v; await saveRec('members', m); }
+    el.disabled = true; const lbl = el.textContent; el.textContent = '送信中…';
+    try{
+      while(writeBusy()) await new Promise(r => setTimeout(r, 200));   // アドレスの保存が終わってから送る
+      const j = await api({action:'mail', to:[v], subject:'【AI・DX定例会】テストメール', body:`${m.name}さん\n\nこれは「AI・DX定例会」アプリからのテストメールです。\nこのメールが届いていれば、自動通知のメールも受け取れます。\n\n送信操作：${S.me ? mName(S.me) : '—'}\n──────────\nこのメールは「AI・DX定例会」アプリから自動送信されています。`});
+      if(j.sent) toast(`${m.name}さん（${v}）にテストメールを送りました`);
+      else toast('送信されませんでした。在籍のチェックが入っているか、GASが「AI・DX定例会_GAS_06」になっているか確認してください','err');
+    }catch(e){ toast('テストメールの送信に失敗しました（GASを「AI・DX定例会_GAS_06」に更新し、メール送信を許可してあるか確認してください）：' + e.message, 'err'); if(/権限|permission|authoriz/i.test(e.message)) toast('メール送信の許可がまだです。Apps Script のエディタで関数「authorizeMail」を選んで「実行」し、承認してください','err'); }
+    finally{ el.disabled = false; el.textContent = lbl; }
+  },
+  addMember: async () => {
+    const name = val('newMemName').trim(); if(!name){ toast('名前を入力してください','err'); return; }
+    const mems = S.data.members;
+    const used = new Set(mems.map(m => m.color));
+    const color = PALETTE.find(c => !used.has(c)) || PALETTE[mems.length % PALETTE.length];
+    await saveRec('members', {id:uid(), name, role:val('newMemRole').trim(), color, active:true, order: mems.reduce((a,m) => Math.max(a, m.order||0), -1)+1});
+    render(); toast(`${name}さんを追加しました`);
+  },
+  memMove: async el => {
+    const list = allMembersSorted(); const i = list.findIndex(m => m.id === el.dataset.id); const j = i + Number(el.dataset.d);
+    if(j < 0 || j >= list.length) return;
+    [list[i], list[j]] = [list[j], list[i]];
+    await saveMany(list.map((m,k) => { m.order = k; m.updatedAt = nowISO(); return {table:'members', record:m}; }));
+    render();
+  },
+  memDel: async el => {
+    const m = mById(el.dataset.id);
+    const used = S.data.minutes.some(x => x.attendees.includes(m.id) || x.author === m.id || x.todos.some(t => t.owner === m.id)) || S.data.messages.some(x => x.author === m.id) || S.data.files.some(x => x.uploader === m.id);
+    if(used && !confirm(`${m.name}さんは過去の記録に含まれています。\n削除すると記録上「（不明）」と表示されます。\n通常は「在籍」のチェックを外す方法をおすすめします。\n\nそれでも削除しますか？`)) return;
+    if(!used && !confirm(`${m.name}さんを削除しますか？`)) return;
+    await delRec('members', m.id);
+    if(S.me === m.id){ S.me = ''; lsDel(LSK.me); }
+    render();
+  },
+  saveGas: async () => {
+    const u = val('gasInput').trim();
+    if(u && !/^https:\/\/script\.google(usercontent)?\.com\//.test(u)){ toast('GASのWebアプリURL（https://script.google.com/…/exec）を入力してください','err'); return; }
+    if(u) lsSet(LSK.gas, u); else lsDel(LSK.gas);
+    await loadData(); render();
+    if(isRemote() && !S.error) toast('共有サーバーに接続しました');
+  },
+  testGas: async () => {
+    const u = val('gasInput').trim() || DEFAULT_GAS_URL; if(!u){ toast('URLを入力してください','err'); return; }
+    try{ const r = await fetch(u, {method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify({action:'ping'})}); const j = await r.json(); toast(j.ok ? '接続OK：'+(j.msg||'') : 'エラー：'+j.error, j.ok?'':'err'); }
+    catch(e){ toast('接続できません：'+e.message, 'err'); }
+  },
+  clearGas: async () => { if(!confirm('この端末のGAS URL設定を消去しますか？')) return; lsDel(LSK.gas); await loadData(); render(); },
+  exportJson: () => {
+    const data = JSON.parse(JSON.stringify(S.data));
+    const blob = new Blob([JSON.stringify({app:'AI・DX定例会', exportedAt:nowISO(), data}, null, 2)], {type:'application/json'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `AI・DX定例会_backup_${today()}.json`; a.click();
+  },
+  importJson: () => $('#importInput').click()
+};
+
+const CHG = {
+  wtHour: async el => {
+    const p = S.wtPeriod, v = wtNormNum(el.value);
+    if(Number.isNaN(v)){ toast('時間は 0 以上の数字で入力してください（例：12.5）', 'err'); const o = wtHours(p, el.dataset.m, el.dataset.i); el.value = o ? wtFmt(o) : ''; return; }
+    const rec = wtEnsure(p, el.dataset.m);
+    if(v) rec.hours[el.dataset.i] = v; else delete rec.hours[el.dataset.i];
+    el.value = v ? wtFmt(v) : '';
+    await saveRec('worktime', rec); wtRefresh();
+  },
+  wtItem: async el => {
+    const p = S.wtPeriod, k = Number(el.dataset.k), t = el.value.trim(), rec = wtEnsure(p, el.dataset.m);
+    if(k < rec.items.length){ if(t) rec.items[k] = t; else rec.items.splice(k, 1); }
+    else if(t && rec.items.length < WT_MAX_ITEMS) rec.items.push(t);
+    else return;
+    await saveRec('worktime', rec); render();
+  },
+  pollFor: el => { S.pollFor = el.value; render(); },
+  setMe: el => { S.pollFor = ''; S.me = el.value; if(S.me) lsSet(LSK.me, S.me); else lsDel(LSK.me); render(); },
+  msgToAll: el => { S.msgToAll = el.checked; if(S.msgToAll) S.msgToIds = []; else if(!S.msgToIds.length){ S.msgToAll = true; } render(); },
+  msgToOne: el => { const id = el.dataset.id; S.msgToAll = false; S.msgToIds = el.checked ? [...new Set([...S.msgToIds, id])] : S.msgToIds.filter(x => x !== id); if(!S.msgToIds.length) S.msgToAll = true; render(); },
+  showCo: el => { S.showCo = el.checked; render(); },
+  meetDateHint: el => { const h = document.getElementById('f_hint'); if(h) h.textContent = coHint(el.value); },
+  todoMine: el => { S.todoMine = el.checked; render(); },
+  memField: async el => {
+    const m = mById(el.dataset.id); const f = el.dataset.f;
+    if(f === 'active') m.active = el.checked;
+    else { const v = el.value.trim(); if(f === 'name' && !v){ el.value = m.name; return; } if(f === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){ toast('メールアドレスの形式が正しくありません','err'); el.value = m.email||''; return; } m[f] = v; }
+    await saveRec('members', m); if(f !== 'email') render();
+  },
+  upField: el => { S[el.dataset.key] = el.value; },
+  filt: el => { S[el.dataset.key] = el.value; render(); },
+  minMeet: el => {
+    const mt = S.data.meetings.find(x => x.id === el.value); if(!mt) return;
+    $('#n_date').value = mt.date;
+    const yes = attendeesOf(mt);
+    if(yes.length) document.querySelectorAll('#n_att input').forEach(i => i.checked = yes.includes(i.value));
+  },
+  fileInput: el => { if(el.files.length) uploadFiles([...el.files]); el.value = ''; },
+  importInput: async el => {
+    const f = el.files[0]; el.value = ''; if(!f) return;
+    try{
+      const j = JSON.parse(await f.text()); const d = j.data || j;
+      const items = []; TABLES.forEach(t => (d[t]||[]).forEach(r => items.push({table:t, record: normRec(t, r)})));
+      if(!items.length){ toast('読み込めるデータがありません','err'); return; }
+      if(isRemote()) items.forEach(it => { if(it.table === 'files' && it.record.dataUrl){ delete it.record.dataUrl; it.record.note = (it.record.note||'') + '（ローカル保存の実体は移行されません）'; } });
+      if(!confirm(`${items.length}件のデータを${isRemote()?'共有サーバー':'この端末'}に読み込みます。よろしいですか？`)) return;
+      await saveMany(items); await loadData(); render(); toast('読み込みました');
+    }catch(e){ toast('読み込みに失敗しました：'+e.message, 'err'); }
+  }
+};
+
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-act]'); if(!el) return;
+  const fn = ACT[el.dataset.act]; if(!fn) return;
+  if(el.tagName === 'A') e.preventDefault();
+  fn(el, e);
+});
+document.addEventListener('change', e => {
+  const el = e.target.closest('[data-chg]'); if(!el) return;
+  const fn = CHG[el.dataset.chg]; if(fn) fn(el, e);
+});
+document.addEventListener('input', e => {
+  if(e.target.id === 'pollComment'){ const p = S.data.polls.find(x => x.id === e.target.dataset.poll); if(p){ const d = getDraft(p); d.comment = e.target.value; d.dirty = true; } return; }
+  const el = e.target.closest('[data-inp]'); if(!el) return;
+  S[el.dataset.inp] = el.value; render();
+});
+document.addEventListener('keydown', e => {
+  if(e.target.id === 'msgInput' && e.key === 'Enter' && (e.ctrlKey || e.metaKey)){ e.preventDefault(); ACT.sendMsg(); }
+  if(e.key === 'Escape' && modalOpen()) closeModal();
+});
+
+/* ---------- auto refresh ---------- */
+let tick = 0;
+setInterval(async () => {
+  tick++;
+  if(!isRemote() || document.hidden || modalOpen() || S.syncing || writeBusy()) return;
+  if(S.view !== 'messages' && tick % 3 !== 0) return;
+  const ae = document.activeElement;
+  if(ae && ae.id !== 'msgInput' && /INPUT|TEXTAREA|SELECT/.test(ae.tagName)) return;
+  if(await loadData(true)) render();
+}, 20000);
+
+document.addEventListener('visibilitychange', async () => {
+  if(document.hidden || !isRemote() || S.syncing || writeBusy() || modalOpen()) return;
+  if(!S.lastSync || Date.now() - S.lastSync.getTime() > 30000){ if(await loadData(true)) render(); }
+});
+
+/* ---------- boot ---------- */
+
+/* ============================================================
+   AI業務時間集計（期ごと・月度は 21日〜翌月20日・手入力）
+   ============================================================ */
+const WT_NAMES = ['大屋','高木','河崎','斎藤'];   // 集計の対象（メンバー名にこの文字を含む人）
+const WT_FIRST = 44;                                // 最初の期
+const WT_NOTES = {'44_0':'スマイルのaidx26090001未対応'};   // 期_月度番号(0=9月度) → 日付の横に出す一言メモ
+const WT_MAX_ITEMS = 20;                            // 1人あたりの業務内容の最大項目数
+const wtYear = p => 1982 + p;                       // 44期 = 2026/8/21 スタート
+function wtCurPeriod(){ const d = new Date(), y = d.getFullYear(); const p = (d.getMonth() > 7 || (d.getMonth() === 7 && d.getDate() >= 21)) ? y - 1982 : y - 1983; return Math.max(WT_FIRST, p); }
+function wtMonths(p){
+  const y = wtYear(p);
+  return Array.from({length:12}, (_, i) => { const a = new Date(y, 7 + i, 21), b = new Date(y, 8 + i, 20);
+    return {i, n:((8 + i) % 12) + 1, label:(((8 + i) % 12) + 1) + '月度', range:`${a.getMonth()+1}/${a.getDate()}〜${b.getMonth()+1}/${b.getDate()}`}; });
+}
+function wtTargets(){ return WT_NAMES.map(n => activeMembers().find(m => (m.name||'').includes(n))).filter(Boolean); }
+const wtId = (p, mid) => `wt${p}_${mid}`;
+function wtRec(p, mid){ return S.data.worktime.find(r => r.id === wtId(p, mid)); }
+function wtHours(p, mid, i){ const r = wtRec(p, mid); const v = r && r.hours ? Number(r.hours[i]) : 0; return isFinite(v) ? v : 0; }
+function wtSum(p, mid, idx){ return idx.reduce((a, i) => a + wtHours(p, mid, i), 0); }
+function wtFmt(n, dash){ if(!n) return dash ? '–' : '0'; return String(Math.round(n * 100) / 100); }
+const WT_Q = [[0,1,2],[3,4,5],[6,7,8],[9,10,11]];
+function wtGroups(p, unit){
+  const M = wtMonths(p);
+  if(unit === 'quarter') return WT_Q.map(q => ({label:`${M[q[0]].n}〜${M[q[2]].n}月`, idx:q}));
+  if(unit === 'half') return [{label:'上期（9〜2月度）', idx:[0,1,2,3,4,5]}, {label:'下期（3〜8月度）', idx:[6,7,8,9,10,11]}];
+  if(unit === 'year') return [{label:`${p}期 合計`, idx:[0,1,2,3,4,5,6,7,8,9,10,11]}];
+  return M.map(m => ({label:m.n + '月', idx:[m.i]}));
+}
+function wtNiceMax(v){ if(v <= 0) return 10; const e = Math.pow(10, Math.floor(Math.log10(v))); const f = v / e; const nf = f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10; return nf * e; }
+
+function wtTableHtml(p, T){
+  const M = wtMonths(p);
+  const rowTot = idx => T.reduce((a, m) => a + wtSum(p, m.id, Array.isArray(idx) ? idx : [idx]), 0);
+  const cellSum = (idx, cls) => T.map(m => `<td data-m="${m.id}" data-idx="${idx.join(',')}">${wtFmt(wtSum(p, m.id, idx), true)}</td>`).join('') + `<td class="tot" data-m="*" data-idx="${idx.join(',')}">${wtFmt(rowTot(idx))}</td>`;
+  const monthRow = m => `<tr><td>${m.label}<span class="rng">${m.range}</span>${WT_NOTES[p + '_' + m.i] ? `<span class="tag orange wtnote">${esc(WT_NOTES[p + '_' + m.i])}</span>` : ''}</td>${T.map(t => { const v = wtHours(p, t.id, m.i); return `<td><input class="inp wtin" type="text" inputmode="decimal" autocomplete="off" data-chg="wtHour" data-m="${t.id}" data-i="${m.i}" value="${v ? wtFmt(v) : ''}" placeholder="0"></td>`; }).join('')}<td class="tot" data-m="*" data-idx="${m.i}">${wtFmt(rowTot(m.i))}</td></tr>`;
+  const sumRow = (cls, label, idx) => `<tr class="${cls}"><td>${label}</td>${cellSum(idx)}</tr>`;
+  const rows = [];
+  [0,1,2,3].forEach(q => {
+    WT_Q[q].forEach(i => rows.push(monthRow(M[i])));
+    rows.push(sumRow('sub', `3か月計<span class="rng" style="color:inherit;opacity:.8">${M[WT_Q[q][0]].n}〜${M[WT_Q[q][2]].n}月度</span>`, WT_Q[q]));
+    if(q === 1) rows.push(sumRow('half', '上期計<span class="rng" style="color:inherit;opacity:.8">9〜2月度</span>', [0,1,2,3,4,5]));
+    if(q === 3) rows.push(sumRow('half', '下期計<span class="rng" style="color:inherit;opacity:.8">3〜8月度</span>', [6,7,8,9,10,11]));
+  });
+  rows.push(sumRow('year', `${p}期 合計<span class="rng" style="color:inherit;opacity:.85">${wtYear(p)}/8/21〜${wtYear(p)+1}/8/20</span>`, [0,1,2,3,4,5,6,7,8,9,10,11]));
+  return `<div class="wt-scroll"><table class="wt"><thead><tr><th>月度（集計期間）</th>${T.map(m => `<th>${avatar(m.id, 22)}${esc(m.name)}</th>`).join('')}<th>合計</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>`;
+}
+function wtChartSvg(p, mid, groups, ymax){
+  const W = 480, H = 190, L = 36, R = 8, Tp = 18, B = 30, pw = W - L - R, ph = H - Tp - B;
+  const n = groups.length, slot = pw / n, bw = Math.min(46, slot * .62);
+  const vals = groups.map(g => wtSum(p, mid, g.idx));
+  let g = '';
+  for(let k = 0; k <= 4; k++){ const y = Tp + ph - ph * k / 4; g += `<line x1="${L}" x2="${W-R}" y1="${y}" y2="${y}" stroke="var(--line)" stroke-width="1"/><text x="${L-5}" y="${y+3}" text-anchor="end" font-size="10" style="fill:var(--muted)">${wtFmt(ymax * k / 4)}</text>`; }
+  groups.forEach((gr, j) => {
+    const v = vals[j], h = ymax ? ph * v / ymax : 0, x = L + slot * j + (slot - bw) / 2, y = Tp + ph - h;
+    g += `<rect x="${x}" y="${y}" width="${bw}" height="${Math.max(h, 0)}" rx="3" style="fill:var(--primary)"><title>${esc(gr.label)}：${wtFmt(v)}時間</title></rect>`;
+    if(v) g += `<text x="${x + bw/2}" y="${y - 4}" text-anchor="middle" font-size="${n > 6 ? 10 : 12}" font-weight="700" style="fill:var(--ink)">${wtFmt(v)}</text>`;
+    g += `<text x="${x + bw/2}" y="${H - 11}" text-anchor="middle" font-size="${n > 6 ? 10 : 11}" style="fill:var(--muted)">${esc(gr.label)}</text>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="時間（h）の棒グラフ">${g}<text x="${L}" y="11" font-size="10" style="fill:var(--muted)">時間（h）</text></svg>`;
+}
+function wtChartsHtml(p, T){
+  const groups = wtGroups(p, S.wtUnit);
+  const all = T.flatMap(m => groups.map(g => wtSum(p, m.id, g.idx)));
+  const ymax = wtNiceMax(Math.max(0, ...all));
+  return `<div class="wt-charts">${T.map(m => `<div class="wt-chart"><h4>${avatar(m.id, 24)}${esc(m.name)}<span class="tag blue">${p}期 計 ${wtFmt(wtSum(p, m.id, [0,1,2,3,4,5,6,7,8,9,10,11]))} h</span></h4>${wtChartSvg(p, m.id, groups, ymax)}</div>`).join('')}</div>`;
+}
+function wtItemsHtml(p, m){
+  const r = wtRec(p, m.id); const items = (r && r.items) || [];
+  const rows = items.map((t, k) => `<div class="wt-item"><span class="n">${k+1}</span><input class="inp" data-chg="wtItem" data-m="${m.id}" data-k="${k}" value="${esc(t)}" maxlength="200"><button class="btn sm ghost" data-act="wtItemDel" data-m="${m.id}" data-k="${k}" title="この項目を削除">✕</button></div>`);
+  if(items.length < WT_MAX_ITEMS) rows.push(`<div class="wt-item"><span class="n">${items.length+1}</span><input class="inp" data-chg="wtItem" data-m="${m.id}" data-k="${items.length}" value="" placeholder="業務内容を入力（例：ChatGPTで議事録を要約）" maxlength="200"></div>`);
+  return `<div class="wt-person"><h4>${avatar(m.id, 24)}${esc(m.name)}<span class="tag ${items.length >= WT_MAX_ITEMS ? 'orange' : ''}">${items.length} / ${WT_MAX_ITEMS} 項目</span></h4>${rows.join('')}</div>`;
+}
+VIEWS.worktime = () => {
+  if(!S.wtPeriod) S.wtPeriod = wtCurPeriod();
+  const p = S.wtPeriod, T = wtTargets();
+  const miss = WT_NAMES.filter(n => !activeMembers().some(m => (m.name||'').includes(n)));
+  const unitBtn = (k, l) => `<button class="${S.wtUnit === k ? 'on yes' : ''}" data-act="wtUnit" data-u="${k}">${l}</button>`;
+  return `<div class="page-h"><div><h2>AI業務時間集計</h2><div class="sub">月度は前月21日〜当月20日（例：9月度 = 8/21〜9/20）。時間は手入力です</div></div>
+      <div class="inline"><button class="btn sm" data-act="wtPeriod" data-p="${p-1}" ${p <= WT_FIRST ? 'disabled' : ''}>‹ 前の期</button><b style="padding:0 6px">${p}期（${wtYear(p)}/8/21〜${wtYear(p)+1}/8/20）</b><button class="btn sm" data-act="wtPeriod" data-p="${p+1}" ${p >= WT_FIRST + 15 ? 'disabled' : ''}>次の期 ›</button></div></div>
+    ${miss.length ? `<div class="card" style="margin-bottom:14px;border-color:#f3d6b4;background:var(--warn-soft)"><div class="small">設定のメンバーに見つからない人がいます：${esc(miss.join('、'))}（在籍にチェックが入っているか確認してください）</div></div>` : ''}
+    <div class="card" style="margin-bottom:14px"><div class="zone-h wtzh" style="margin-bottom:10px"><span class="zi">⏱</span>時間の表<span class="zs">各月度のマスに「時間（h）」を入力すると、3か月・上期・下期・期の合計が自動で計算されます</span></div>
+      ${T.length ? wtTableHtml(p, T) : '<div class="empty">対象メンバーが見つかりません</div>'}
+      <div class="small muted" style="margin-top:6px">入力は自動保存されます。0.5（30分）のような小数も入力できます。</div></div>
+    <div class="card" style="margin-bottom:14px"><div class="zone-h wtzh" style="margin-bottom:10px"><span class="zi">📊</span>各人の棒グラフ<span class="zs">縦軸は全員そろえてあるので、人どうしの時間を比べられます</span></div>
+      <div class="inline" style="margin-bottom:10px"><span class="small muted">集計の単位</span><span class="seg">${unitBtn('month','月度ごと')}${unitBtn('quarter','3か月ごと')}${unitBtn('half','上期・下期')}${unitBtn('year','期の合計')}</span></div>
+      <div id="wtCharts">${T.length ? wtChartsHtml(p, T) : ''}</div></div>
+    <div class="card"><div class="zone-h wtzh" style="margin-bottom:10px"><span class="zi">📝</span>各人の業務内容<span class="zs">${p}期の AI 関連の業務内容を、1人${WT_MAX_ITEMS}項目まで書けます</span></div>
+      <div class="wt-people">${T.map(m => wtItemsHtml(p, m)).join('')}</div></div>`;
+};
+function wtRefresh(){
+  const p = S.wtPeriod, T = wtTargets();
+  document.querySelectorAll('table.wt td[data-idx]').forEach(td => {
+    const idx = td.dataset.idx.split(',').map(Number);
+    const v = td.dataset.m === '*' ? T.reduce((a, m) => a + wtSum(p, m.id, idx), 0) : wtSum(p, td.dataset.m, idx);
+    const isInput = !!td.closest('tr') && !td.closest('tr').className;   // 月度の行
+    td.textContent = wtFmt(v, !(td.dataset.m === '*') && !isInput ? true : false);
+  });
+  const c = document.getElementById('wtCharts'); if(c) c.innerHTML = T.length ? wtChartsHtml(p, T) : '';
+}
+function wtNormNum(str){
+  const t = String(str).trim().replace(/[０-９．，]/g, ch => ({'．':'.','，':','}[ch] || String.fromCharCode(ch.charCodeAt(0) - 0xFEE0))).replace(/,/g, '').replace(/[hHｈ時間]+$/, '');
+  if(t === '') return 0; const v = Number(t); return isFinite(v) && v >= 0 ? v : NaN;
+}
+function wtEnsure(p, mid){ return wtRec(p, mid) ? JSON.parse(JSON.stringify(wtRec(p, mid))) : {id:wtId(p, mid), period:p, memberId:mid, hours:{}, items:[]}; }
+
+/* ---------- 公開版：専用リンク(#gas=)の受け取り ---------- */
+let linkMsg = '';
+(function acceptGasLink(){
+  try{
+    const m = location.hash.match(/[#&]gas=([^&]+)/); if(!m) return;
+    const u = decodeURIComponent(m[1]).trim();
+    if(/^https:\/\/script\.google(usercontent)?\.com\//.test(u)){ if(lsSet(LSK.gas, u)) linkMsg = '共有サーバーに接続しました（この端末に保存済み）'; else linkMsg = 'この端末ではURLを保存できませんでした'; }
+    history.replaceState(null, '', location.pathname + location.search);
+  }catch(e){}
+})();
+
+/* ---------- 公開版：更新の確認（version.json） ---------- */
+async function checkUpdate(){
+  if(!/^https?:/.test(location.protocol)) return;
+  try{
+    const r = await fetch('version.json?t=' + Date.now(), {cache:'no-store'}); if(!r.ok) return;
+    const j = await r.json();
+    if(j && j.version && String(j.version) !== String(APP_VERSION)) document.getElementById('updbar').classList.add('on');
+  }catch(e){}
+}
+document.getElementById('updBtn').addEventListener('click', async () => {
+  try{ await fetch(location.pathname, {cache:'reload'}); }catch(e){}
+  location.reload();
+});
+setInterval(checkUpdate, 10 * 60 * 1000);
+document.addEventListener('visibilitychange', () => { if(!document.hidden) checkUpdate(); });
+if('serviceWorker' in navigator && /^https:/.test(location.protocol)){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+
+(async () => {
+  const cached = loadCache();
+  render();
+  await loadData(cached);
+  if(S.me && !mById(S.me)){ S.me = ''; lsDel(LSK.me); }
+  render();
+  if(!S.me && S.data.members.length) askMe();
+  if(linkMsg) toast(linkMsg);
+  else if(!isRemote() && /^https?:/.test(location.protocol)) toast('共有サーバーに未接続です。配布された「専用リンク」から開いてください','err');
+  checkUpdate();
+})();
+</script>
+</body>
+</html>
