@@ -27,5 +27,14 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+aidxteireikai",
+      "url": "./?open=%s"
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
 }
