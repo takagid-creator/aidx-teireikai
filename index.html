@@ -307,10 +307,15 @@ input.wtin{width:78px;text-align:right;padding:4px 6px}
 .wt-chart h4{margin:0 0 6px;display:flex;align-items:center;gap:8px;font-size:14px}
 .wt-chart h4 .tag{margin-left:auto}
 .wt-chart svg{width:100%;height:auto;display:block}
-.wt-item{display:flex;align-items:center;gap:6px;margin-bottom:5px}
-.wt-item .n{width:22px;text-align:right;color:var(--muted);font-size:12px;flex-shrink:0}
+.wt-item{display:flex;align-items:flex-start;gap:6px;margin-bottom:5px}
+.wt-item textarea.inp{resize:none;overflow:hidden;line-height:1.5;field-sizing:content;min-height:38px;font-family:inherit}
+.wt-item .ph{width:34px;flex:0 0 34px}
+.wt-item .n{width:22px;text-align:right;color:var(--muted);font-size:12px;flex-shrink:0;padding-top:10px}
 .wt-item .inp{flex:1;min-width:0}
-.wt-people{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.wt-people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.wt-item .wt-kind{width:108px;flex:0 0 108px;padding-left:6px;padding-right:2px;font-size:12.5px;color:var(--muted)}
+.wt-item .wt-kind:not([data-v='']){color:var(--ink);font-weight:600}
+@media(max-width:900px){.wt-people{grid-template-columns:minmax(0,1fr)}}
 .wt-person{border:1px solid var(--line);border-radius:10px;padding:12px}
 .wt-person h4{margin:0 0 8px;display:flex;align-items:center;gap:8px;font-size:14px}
 .wt-person h4 .tag{margin-left:auto}
@@ -352,7 +357,7 @@ input.wtin{width:78px;text-align:right;padding:4px 6px}
    配布する「専用リンク（…/#gas=URL）」を最初に1回開くと、その端末に保存されます。
    ============================================================ */
 const DEFAULT_GAS_URL = '';  // 公開版：URLは埋め込まない（専用リンク #gas=… から各端末に保存）
-const APP_VERSION = '54';
+const APP_VERSION = '55';
 
 const LSK = {cache:'aidx_cache_v1', data:'aidx_data_v1', me:'aidx_me', gas:'aidx_gas_url', seen:'aidx_msg_seen'};
 const TABLES = ['members','meetings','minutes','files','messages','polls','answers','worktime'];
@@ -454,7 +459,7 @@ function normRec(t, r){
   if(t==='members' && o.active === undefined) o.active = true;
   if(t==='messages'){ if(o.pinned === undefined) o.pinned = false; if(!Array.isArray(o.to)) o.to = []; }
   if(t==='polls'){ if(!Array.isArray(o.slots)) o.slots = []; if(!o.status) o.status = 'open'; }
-  if(t==='worktime'){ if(!o.hours || typeof o.hours !== 'object' || Array.isArray(o.hours)) o.hours = {}; if(!Array.isArray(o.items)) o.items = []; }
+  if(t==='worktime'){ if(!o.hours || typeof o.hours !== 'object' || Array.isArray(o.hours)) o.hours = {}; if(!Array.isArray(o.items)) o.items = []; o.items = o.items.map(x => (x && typeof x === 'object') ? {t:String(x.t||''), k:String(x.k||'')} : {t:String(x==null?'':x), k:''}); }
   if(t==='answers'){ if(!o.marks || typeof o.marks !== 'object') o.marks = {}; if(o.submitted === undefined) o.submitted = false; }
   return o;
 }
@@ -1831,11 +1836,17 @@ const CHG = {
     await saveRec('worktime', rec); wtRefresh();
   },
   wtItem: async el => {
-    const p = S.wtPeriod, k = Number(el.dataset.k), t = el.value.trim(), rec = wtEnsure(p, el.dataset.m);
-    if(k < rec.items.length){ if(t) rec.items[k] = t; else rec.items.splice(k, 1); }
-    else if(t && rec.items.length < WT_MAX_ITEMS) rec.items.push(t);
+    const row = el.closest('.wt-item'), sel = row && row.querySelector('select'), kd = sel ? sel.value : '';
+    const p = S.wtPeriod, k = Number(el.dataset.k), t = el.value.replace(/\s*\n\s*/g,' ').trim(), rec = wtEnsure(p, el.dataset.m);
+    if(k < rec.items.length){ if(t) rec.items[k] = {t, k:kd}; else rec.items.splice(k, 1); }
+    else if(t && rec.items.length < WT_MAX_ITEMS) rec.items.push({t, k:kd});
     else return;
     await saveRec('worktime', rec); render();
+  },
+  wtKind: async el => {
+    const p = S.wtPeriod, k = Number(el.dataset.k), rec = wtEnsure(p, el.dataset.m);
+    el.dataset.v = el.value;
+    if(k < rec.items.length){ rec.items[k] = {t:rec.items[k].t, k:el.value}; await saveRec('worktime', rec); }
   },
   pollFor: el => { S.pollFor = el.value; render(); },
   setMe: el => { S.pollFor = ''; S.me = el.value; if(S.me) lsSet(LSK.me, S.me); else lsDel(LSK.me); render(); },
@@ -1878,6 +1889,7 @@ document.addEventListener('click', e => {
   if(el.tagName === 'A') e.preventDefault();
   fn(el, e);
 });
+document.addEventListener('keydown', e => { if(e.key === 'Enter' && !e.isComposing && e.target.matches && e.target.matches('.wt-item textarea')){ e.preventDefault(); e.target.blur(); } });
 document.addEventListener('change', e => {
   const el = e.target.closest('[data-chg]'); if(!el) return;
   const fn = CHG[el.dataset.chg]; if(fn) fn(el, e);
@@ -1916,6 +1928,7 @@ document.addEventListener('visibilitychange', async () => {
 const WT_NAMES = ['大屋','高木','河崎','斎藤'];   // 集計の対象（メンバー名にこの文字を含む人）
 const WT_FIRST = 44;                                // 最初の期
 const WT_NOTES = {'44_0':'スマイルのaidx26090001未対応'};   // 期_月度番号(0=9月度) → 日付の横に出す一言メモ
+const WT_KINDS = ['ツール作成','管理','その他'];   // 業務内容の種類（選択式）
 const WT_MAX_ITEMS = 20;                            // 1人あたりの業務内容の最大項目数
 const wtYear = p => 1982 + p;                       // 44期 = 2026/8/21 スタート
 function wtCurPeriod(){ const d = new Date(), y = d.getFullYear(); const p = (d.getMonth() > 7 || (d.getMonth() === 7 && d.getDate() >= 21)) ? y - 1982 : y - 1983; return Math.max(WT_FIRST, p); }
@@ -1977,9 +1990,10 @@ function wtChartsHtml(p, T){
   return `<div class="wt-charts">${T.map(m => `<div class="wt-chart"><h4>${avatar(m.id, 24)}${esc(m.name)}<span class="tag blue">${p}期 計 ${wtFmt(wtSum(p, m.id, [0,1,2,3,4,5,6,7,8,9,10,11]))} h</span></h4>${wtChartSvg(p, m.id, groups, ymax)}</div>`).join('')}</div>`;
 }
 function wtItemsHtml(p, m){
-  const r = wtRec(p, m.id); const items = (r && r.items) || [];
-  const rows = items.map((t, k) => `<div class="wt-item"><span class="n">${k+1}</span><input class="inp" data-chg="wtItem" data-m="${m.id}" data-k="${k}" value="${esc(t)}" maxlength="200"><button class="btn sm ghost" data-act="wtItemDel" data-m="${m.id}" data-k="${k}" title="この項目を削除">✕</button></div>`);
-  if(items.length < WT_MAX_ITEMS) rows.push(`<div class="wt-item"><span class="n">${items.length+1}</span><input class="inp" data-chg="wtItem" data-m="${m.id}" data-k="${items.length}" value="" placeholder="業務内容を入力（例：ChatGPTで議事録を要約）" maxlength="200"></div>`);
+  const r = wtRec(p, m.id); const items = ((r && r.items) || []).map(x => (x && typeof x === 'object') ? x : {t:String(x), k:''});
+  const kindSel = (k, v) => `<select class="inp wt-kind" data-v="${esc(v)}" data-chg="wtKind" data-m="${m.id}" data-k="${k}" title="業務の種類"><option value="">種類</option>${WT_KINDS.map(x => `<option ${x===v?'selected':''}>${x}</option>`).join('')}</select>`;
+  const rows = items.map((it, k) => `<div class="wt-item"><span class="n">${k+1}</span>${kindSel(k, it.k)}<textarea class="inp" rows="1" data-chg="wtItem" data-m="${m.id}" data-k="${k}" maxlength="300">${esc(it.t)}</textarea><button class="btn sm ghost" data-act="wtItemDel" data-m="${m.id}" data-k="${k}" title="この項目を削除">✕</button></div>`);
+  if(items.length < WT_MAX_ITEMS) rows.push(`<div class="wt-item"><span class="n">${items.length+1}</span>${kindSel(items.length, '')}<textarea class="inp" rows="1" data-chg="wtItem" data-m="${m.id}" data-k="${items.length}" placeholder="業務内容を入力（例：ChatGPTで議事録を要約）" maxlength="300"></textarea><span class="ph"></span></div>`);
   return `<div class="wt-person"><h4>${avatar(m.id, 24)}${esc(m.name)}<span class="tag ${items.length >= WT_MAX_ITEMS ? 'orange' : ''}">${items.length} / ${WT_MAX_ITEMS} 項目</span></h4>${rows.join('')}</div>`;
 }
 VIEWS.worktime = () => {
